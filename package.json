@@ -1,0 +1,23 @@
+{
+  "name": "zoobz.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nuxt.config.ts",
+  "scripts": {
+    "dev": "nuxi dev",
+    "postinstall": "nuxi prepare"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@zoobzio/blog": "^0.0.2",
+    "nuxt": "^3.12.4"
+  },
+  "dependencies": {
+    "@iconify-json/circle-flags": "^1.1.48",
+    "@iconify-json/ic": "^1.1.17",
+    "@iconify-json/simple-icons": "^1.1.109",
+    "@vueuse/core": "^10.11.0"
+  }
+}
