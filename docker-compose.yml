@@ -1,0 +1,59 @@
+services:
+  proxy:
+    image: caddy:2-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - vicky_default
+
+  # Vicky UI
+  vicky:
+    build:
+      context: apps/vicky
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/apps/vicky
+    environment:
+      - NUXT_VICKY_API_URL=http://vicky-api:8080
+      - NUXT_VICKY_OPENAPI_URL=http://vicky-api:8080/openapi
+    networks:
+      - vicky_default
+
+  # Blog
+  blog:
+    build:
+      context: sites/blog
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/blog
+    networks:
+      - vicky_default
+
+  # Docs - Sentinel
+  docs-sentinel:
+    build:
+      context: sites/docs/sentinel
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/sentinel
+    networks:
+      - vicky_default
+
+volumes:
+  caddy_data:
+  caddy_config:
+
+networks:
+  vicky_default:
+    external: true

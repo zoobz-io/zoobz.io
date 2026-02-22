@@ -1,0 +1,20 @@
+vicky.local {
+	reverse_proxy vicky:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+blog.local {
+	reverse_proxy blog:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.sentinel.local {
+	reverse_proxy docs-sentinel:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}

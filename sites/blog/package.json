@@ -1,0 +1,23 @@
+{
+  "name": "@zoobz/blog",
+  "type": "module",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "prepare": "nuxi prepare",
+    "typecheck": "nuxi typecheck"
+  },
+  "dependencies": {
+    "@foundation/blogula": "workspace:*",
+    "@foundation/prose": "workspace:*",
+    "@nuxt/content": "catalog:"
+  },
+  "devDependencies": {
+    "nuxt": "catalog:",
+    "typescript": "catalog:"
+  }
+}

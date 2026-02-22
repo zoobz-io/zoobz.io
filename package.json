@@ -1,23 +1,31 @@
 {
   "name": "zoobz.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "nuxt.config.ts",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "pnpm": {
+    "neverBuiltDependencies": ["better-sqlite3"]
+  },
+  "author": {
+    "name": "Alex Thorwaldson",
+    "email": "alex@zoobz.io",
+    "url": "https://zoobz.io"
+  },
   "scripts": {
-    "dev": "nuxi dev",
-    "postinstall": "nuxi prepare"
+    "sentinel:dev": "pnpm --filter @zoobz/docs-sentinel dev",
+    "sentinel:build": "pnpm --filter @zoobz/docs-sentinel build",
+    "sentinel:generate": "pnpm --filter @zoobz/docs-sentinel generate",
+    "sentinel:preview": "pnpm --filter @zoobz/docs-sentinel preview",
+    "blog:dev": "pnpm --filter @zoobz/blog dev",
+    "blog:build": "pnpm --filter @zoobz/blog build",
+    "blog:generate": "pnpm --filter @zoobz/blog generate",
+    "blog:preview": "pnpm --filter @zoobz/blog preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
+  "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c",
   "devDependencies": {
-    "@zoobzio/blog": "^0.0.2",
-    "nuxt": "^3.12.4"
-  },
-  "dependencies": {
-    "@iconify-json/circle-flags": "^1.1.48",
-    "@iconify-json/ic": "^1.1.17",
-    "@iconify-json/simple-icons": "^1.1.109",
-    "@vueuse/core": "^10.11.0"
+    "@nuxt/eslint-config": "^1.4.0",
+    "eslint": "^9.0.0"
   }
 }

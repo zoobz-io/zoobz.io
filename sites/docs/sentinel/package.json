@@ -1,0 +1,30 @@
+{
+  "name": "@zoobz/docs-sentinel",
+  "type": "module",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "prepare": "nuxi prepare",
+    "typecheck": "nuxi typecheck"
+  },
+  "dependencies": {
+    "@foundation/blocks": "workspace:*",
+    "@foundation/docula": "workspace:*",
+    "@foundation/iconic": "workspace:*",
+    "@foundation/prose": "workspace:*",
+    "@foundation/untheme": "workspace:*",
+    "@nuxt/content": "catalog:",
+    "@nuxt/fonts": "^0.12.1"
+  },
+  "devDependencies": {
+    "@iconify-json/circle-flags": "^1.2.10",
+    "@iconify-json/ic": "^1.2.4",
+    "nuxt": "catalog:",
+    "nuxt-typed-router": "^4.0.2",
+    "typescript": "catalog:"
+  }
+}

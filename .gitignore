@@ -1,2 +1,33 @@
-.nuxt 
-node_modules
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+.output/
+.nuxt/
+dist/
+
+# Local data
+.data/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Cache
+.content-cache/
+node-compile-cache/

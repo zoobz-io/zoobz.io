@@ -1,0 +1,18 @@
+packages:
+  - "apps/*"
+  - "sites/docs/*"
+  - "sites/blog"
+  - "../foundation/layers/*"
+  - "../foundation/packages/*"
+  - "../foundation/apps/*"
+
+catalog:
+  nuxt: ^4.2.0
+  defu: ^6.1.4
+  typescript: ^5.9.3
+  "@pinia/nuxt": ^0.11.3
+  pinia: ^3.0.4
+  "reka-ui": ^2.6.0
+  unocss: ^66.5.5
+  "@unocss/nuxt": ^66.5.5
+  "@nuxt/content": ^3.9.0
