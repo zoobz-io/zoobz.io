@@ -1,0 +1,32 @@
+.f-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--ref-spacing-xl);
+  min-height: 60vh;
+}
+
+.f-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--ref-spacing-md);
+}
+
+.f-hero-tagline {
+  font-size: var(--ref-text-4xl);
+  font-weight: var(--ref-font-bold);
+  color: var(--sys-on-surface);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.f-hero-tagline-highlight {
+  color: var(--sys-primary);
+  display: block;
+}
+
+.f-hero-showcase {
+  display: flex;
+  align-items: center;
+}

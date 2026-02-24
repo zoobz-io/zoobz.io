@@ -31,3 +31,6 @@ Thumbs.db
 # Cache
 .content-cache/
 node-compile-cache/
+
+# AI 
+.playwright-mcp

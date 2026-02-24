@@ -1,0 +1,57 @@
+/* Capabilities: stacked rows, no table borders */
+.f-landing-capabilities-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-landing-capability {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--ref-spacing-lg);
+  padding-top: var(--ref-spacing-md);
+  padding-bottom: var(--ref-spacing-md);
+  border-bottom: var(--ref-border-width-thin) solid var(--sys-outline);
+}
+
+.f-landing-capability:first-child {
+  border-top: var(--ref-border-width-thin) solid var(--sys-outline);
+}
+
+.f-landing-capability-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ref-spacing-2xs);
+}
+
+.f-landing-capability-feature {
+  font-size: var(--ref-text-sm);
+  font-weight: var(--ref-font-bold);
+  color: var(--sys-on-surface);
+}
+
+.f-landing-capability-description {
+  font-size: var(--ref-text-sm);
+  color: var(--sys-on-surface-variant);
+}
+
+.f-landing-capability-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ref-spacing-2xs);
+  font-size: var(--ref-text-sm);
+  color: var(--sys-on-surface-variant);
+  text-decoration: none;
+  white-space: nowrap;
+  transition-duration: var(--ref-duration-fast);
+  transition-timing-function: var(--ref-ease-out);
+}
+
+.f-landing-capability-link:hover {
+  color: var(--sys-on-surface);
+}
+
+.f-landing-capability-link .f-icon {
+  width: 1em;
+  height: 1em;
+}

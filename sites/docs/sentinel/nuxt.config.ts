@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-11-17",
   extends: ["@foundation/docula"],
   modules: ["nuxt-typed-router"],
+  doculaCss: { enabled: true },
   app: {
     head: {
       title: "Zoobz Docs",

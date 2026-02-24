@@ -1,0 +1,51 @@
+/* Landing page root */
+.f-landing {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Full-width landing section with alternating backgrounds */
+.f-landing-section {
+  width: 100%;
+  border-top: var(--ref-border-width-thin) solid var(--sys-outline);
+}
+
+.f-landing-section-alt {
+  background: var(--sys-surface-container);
+}
+
+/* Constrain section content to container width */
+.f-landing-section-inner {
+  max-width: var(--ref-width-container);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: var(--ref-spacing-lg);
+  padding-right: var(--ref-spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--ref-spacing-xl);
+}
+
+/* Section header: title + description */
+.f-landing-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ref-spacing-xs);
+  max-width: 40rem;
+}
+
+.f-landing-title {
+  font-size: var(--ref-text-2xl);
+  font-weight: var(--ref-font-bold);
+  color: var(--sys-on-surface);
+  margin: 0;
+}
+
+.f-landing-description {
+  font-size: var(--ref-text-base);
+  color: var(--sys-on-surface-variant);
+  margin: 0;
+  line-height: 1.6;
+}

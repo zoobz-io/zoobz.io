@@ -2,9 +2,9 @@ packages:
   - "apps/*"
   - "sites/docs/*"
   - "sites/blog"
-  - "../foundation/layers/*"
-  - "../foundation/packages/*"
-  - "../foundation/apps/*"
+  - "layers/*"
+  - "packages/*"
+  - "templates/*"
 
 catalog:
   nuxt: ^4.2.0

@@ -1,0 +1,36 @@
+{
+  "name": "@foundation/untheme",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Alex Thorwaldson",
+    "email": "alex@zoobz.io",
+    "url": "https://zoobz.io"
+  },
+  "exports": {
+    "./*": "./src/*.ts",
+    "./themes/*": "./themes/*.ts"
+  },
+  "imports": {
+    "#untheme/*": "./src/*",
+    "#runtime/*": "./runtime/*",
+    "#themes/*": "./themes/*"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "defu": "catalog:",
+    "unocss": "^66.5.5",
+    "vue": "^3.5.24"
+  },
+  "devDependencies": {
+    "@nuxt/kit": "^4.2.1",
+    "@nuxt/schema": "^4.2.1",
+    "nuxt": "^4.2.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
