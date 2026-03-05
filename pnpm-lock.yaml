@@ -240,7 +240,1254 @@ importers:
         specifier: 'catalog:'
         version: 5.9.3
 
+  sites/docs/aegis:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/aperture:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/astql:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/atom:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/capitan:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/cereal:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/chisel:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/chit:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/cldpd:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/clockz:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/cogito:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/edamame:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/fig:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/flume:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/flux:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/grub:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/herald:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/openapi:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/pipz:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/rocco:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/scio:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/sctx:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
   sites/docs/sentinel:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/slush:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/soy:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/streamz:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/sum:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/tendo:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/vecna:
+    dependencies:
+      '@nuxt/content':
+        specifier: 'catalog:'
+        version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@nuxt/fonts':
+        specifier: ^0.12.1
+        version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
+    devDependencies:
+      '@iconify-json/circle-flags':
+        specifier: ^1.2.10
+        version: 1.2.10
+      '@iconify-json/ic':
+        specifier: ^1.2.4
+        version: 1.2.4
+      nuxt:
+        specifier: 'catalog:'
+        version: 4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2)
+      nuxt-typed-router:
+        specifier: ^4.0.2
+        version: 4.0.2(magicast@0.5.2)(prettier@3.8.1)
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  sites/docs/zyn:
     dependencies:
       '@nuxt/content':
         specifier: 'catalog:'
@@ -5580,6 +6827,7 @@ packages:
 
   unplugin-vue-router@0.19.2:
     resolution: {integrity: sha512-u5dgLBarxE5cyDK/hzJGfpCTLIAyiTXGlo85COuD4Nssj6G7NxS+i9mhCWz/1p/ud1eMwdcUbTXehQe41jYZUA==}
+    deprecated: 'Merged into vuejs/router. Migrate: https://router.vuejs.org/guide/migration/v4-to-v5.html'
     peerDependencies:
       '@vue/compiler-sfc': ^3.5.17
       vue-router: ^4.6.0

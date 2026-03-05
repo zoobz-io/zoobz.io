@@ -1,0 +1,31 @@
+{
+  "name": "@zoobz/docs-aegis",
+  "type": "module",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "prepare": "nuxi prepare",
+    "typecheck": "nuxi typecheck"
+  },
+  "dependencies": {
+    "@zoobz.io/blocks": "workspace:*",
+    "@zoobz.io/docula": "workspace:*",
+    "@zoobz.io/github": "workspace:*",
+    "@zoobz.io/iconic": "workspace:*",
+    "@zoobz.io/prose": "workspace:*",
+    "@zoobz.io/untheme": "workspace:*",
+    "@nuxt/content": "catalog:",
+    "@nuxt/fonts": "^0.12.1"
+  },
+  "devDependencies": {
+    "@iconify-json/circle-flags": "^1.2.10",
+    "@iconify-json/ic": "^1.2.4",
+    "nuxt": "catalog:",
+    "nuxt-typed-router": "^4.0.2",
+    "typescript": "catalog:"
+  }
+}

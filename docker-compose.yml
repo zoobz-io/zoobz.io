@@ -50,6 +50,354 @@ services:
     networks:
       - vicky_default
 
+  # Docs - Capitan
+  docs-capitan:
+    build:
+      context: sites/docs/capitan
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/capitan
+    networks:
+      - vicky_default
+
+  # Docs - Cereal
+  docs-cereal:
+    build:
+      context: sites/docs/cereal
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/cereal
+    networks:
+      - vicky_default
+
+  # Docs - Edamame
+  docs-edamame:
+    build:
+      context: sites/docs/edamame
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/edamame
+    networks:
+      - vicky_default
+
+  # Docs - Soy
+  docs-soy:
+    build:
+      context: sites/docs/soy
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/soy
+    networks:
+      - vicky_default
+
+  # Docs - ASTQL
+  docs-astql:
+    build:
+      context: sites/docs/astql
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/astql
+    networks:
+      - vicky_default
+
+  # Docs - Grub
+  docs-grub:
+    build:
+      context: sites/docs/grub
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/grub
+    networks:
+      - vicky_default
+
+  # Docs - Fig
+  docs-fig:
+    build:
+      context: sites/docs/fig
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/fig
+    networks:
+      - vicky_default
+
+  # Docs - Flux
+  docs-flux:
+    build:
+      context: sites/docs/flux
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/flux
+    networks:
+      - vicky_default
+
+  # Docs - Pipz
+  docs-pipz:
+    build:
+      context: sites/docs/pipz
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/pipz
+    networks:
+      - vicky_default
+
+  # Docs - Flume
+  docs-flume:
+    build:
+      context: sites/docs/flume
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/flume
+    networks:
+      - vicky_default
+
+  # Docs - Streamz
+  docs-streamz:
+    build:
+      context: sites/docs/streamz
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/streamz
+    networks:
+      - vicky_default
+
+  # Docs - Clockz
+  docs-clockz:
+    build:
+      context: sites/docs/clockz
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/clockz
+    networks:
+      - vicky_default
+
+  # Docs - Scio
+  docs-scio:
+    build:
+      context: sites/docs/scio
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/scio
+    networks:
+      - vicky_default
+
+  # Docs - Sctx
+  docs-sctx:
+    build:
+      context: sites/docs/sctx
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/sctx
+    networks:
+      - vicky_default
+
+  # Docs - Atom
+  docs-atom:
+    build:
+      context: sites/docs/atom
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/atom
+    networks:
+      - vicky_default
+
+  # Docs - OpenAPI
+  docs-openapi:
+    build:
+      context: sites/docs/openapi
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/openapi
+    networks:
+      - vicky_default
+
+  # Docs - Aperture
+  docs-aperture:
+    build:
+      context: sites/docs/aperture
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/aperture
+    networks:
+      - vicky_default
+
+  # Docs - Herald
+  docs-herald:
+    build:
+      context: sites/docs/herald
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/herald
+    networks:
+      - vicky_default
+
+  # Docs - Tendo
+  docs-tendo:
+    build:
+      context: sites/docs/tendo
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/tendo
+    networks:
+      - vicky_default
+
+  # Docs - Vecna
+  docs-vecna:
+    build:
+      context: sites/docs/vecna
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/vecna
+    networks:
+      - vicky_default
+
+  # Docs - Aegis
+  docs-aegis:
+    build:
+      context: sites/docs/aegis
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/aegis
+    networks:
+      - vicky_default
+
+  # Docs - Slush
+  docs-slush:
+    build:
+      context: sites/docs/slush
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/slush
+    networks:
+      - vicky_default
+
+  # Docs - Rocco
+  docs-rocco:
+    build:
+      context: sites/docs/rocco
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/rocco
+    networks:
+      - vicky_default
+
+  # Docs - Sum
+  docs-sum:
+    build:
+      context: sites/docs/sum
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/sum
+    networks:
+      - vicky_default
+
+  # Docs - cldpd
+  docs-cldpd:
+    build:
+      context: sites/docs/cldpd
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/cldpd
+    networks:
+      - vicky_default
+
+  # Docs - Chisel
+  docs-chisel:
+    build:
+      context: sites/docs/chisel
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/chisel
+    networks:
+      - vicky_default
+
+  # Docs - Chit
+  docs-chit:
+    build:
+      context: sites/docs/chit
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/chit
+    networks:
+      - vicky_default
+
+  # Docs - Cogito
+  docs-cogito:
+    build:
+      context: sites/docs/cogito
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/cogito
+    networks:
+      - vicky_default
+
+  # Docs - Zyn
+  docs-zyn:
+    build:
+      context: sites/docs/zyn
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app/zoobz.io
+      - ../foundation:/app/foundation
+    working_dir: /app/zoobz.io/sites/docs/zyn
+    networks:
+      - vicky_default
+
 volumes:
   caddy_data:
   caddy_config:

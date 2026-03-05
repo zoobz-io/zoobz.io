@@ -18,3 +18,206 @@ docs.sentinel.local {
 		lb_try_interval 1s
 	}
 }
+
+docs.capitan.local {
+	reverse_proxy docs-capitan:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.cereal.local {
+	reverse_proxy docs-cereal:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.edamame.local {
+	reverse_proxy docs-edamame:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.soy.local {
+	reverse_proxy docs-soy:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.astql.local {
+	reverse_proxy docs-astql:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.grub.local {
+	reverse_proxy docs-grub:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.fig.local {
+	reverse_proxy docs-fig:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.flux.local {
+	reverse_proxy docs-flux:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.pipz.local {
+	reverse_proxy docs-pipz:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.flume.local {
+	reverse_proxy docs-flume:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.streamz.local {
+	reverse_proxy docs-streamz:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.clockz.local {
+	reverse_proxy docs-clockz:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.scio.local {
+	reverse_proxy docs-scio:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.sctx.local {
+	reverse_proxy docs-sctx:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.atom.local {
+	reverse_proxy docs-atom:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.openapi.local {
+	reverse_proxy docs-openapi:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.aperture.local {
+	reverse_proxy docs-aperture:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.herald.local {
+	reverse_proxy docs-herald:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.tendo.local {
+	reverse_proxy docs-tendo:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.vecna.local {
+	reverse_proxy docs-vecna:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.aegis.local {
+	reverse_proxy docs-aegis:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.slush.local {
+	reverse_proxy docs-slush:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.rocco.local {
+	reverse_proxy docs-rocco:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.sum.local {
+	reverse_proxy docs-sum:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.cldpd.local {
+	reverse_proxy docs-cldpd:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.chisel.local {
+	reverse_proxy docs-chisel:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.chit.local {
+	reverse_proxy docs-chit:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.cogito.local {
+	reverse_proxy docs-cogito:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
+
+docs.zyn.local {
+	reverse_proxy docs-zyn:3000 {
+		lb_try_duration 30s
+		lb_try_interval 1s
+	}
+}
