@@ -34,8 +34,6 @@
   padding-right: var(--ref-spacing-sm);
   padding-top: var(--ref-spacing-2xs);
   padding-bottom: var(--ref-spacing-2xs);
-  transition-duration: var(--ref-duration-fast);
-  transition-timing-function: var(--ref-ease-out);
 }
 
 .f-tags-input-item-text {
@@ -49,8 +47,6 @@
   background: var(--ref-color-transparent);
   color: var(--sys-on-surface-variant);
   cursor: pointer;
-  transition-duration: var(--ref-duration-fast);
-  transition-timing-function: var(--ref-ease-out);
 }
 
 .f-tags-input-item-delete:hover {

@@ -4,3 +4,59 @@
   line-height: var(--ref-leading-relaxed);
   display: block;
 }
+
+/* Prose spacing: margins scoped to article context */
+.f-article .f-h1 {
+  margin-top: var(--ref-spacing-none);
+  margin-bottom: var(--ref-spacing-xl);
+}
+
+.f-article .f-h2 {
+  margin-top: var(--ref-spacing-2xl);
+  margin-bottom: var(--ref-spacing-lg);
+}
+
+.f-article .f-h3 {
+  margin-top: var(--ref-spacing-xl);
+  margin-bottom: var(--ref-spacing-sm);
+}
+
+.f-article .f-h4 {
+  margin-top: var(--ref-spacing-lg);
+  margin-bottom: var(--ref-spacing-xs);
+}
+
+.f-article .f-h5 {
+  margin-top: var(--ref-spacing-lg);
+  margin-bottom: var(--ref-spacing-xs);
+}
+
+.f-article .f-h6 {
+  margin-top: var(--ref-spacing-lg);
+  margin-bottom: var(--ref-spacing-xs);
+}
+
+.f-article .f-p {
+  margin-top: var(--ref-spacing-base);
+  margin-bottom: var(--ref-spacing-base);
+}
+
+.f-article .f-blockquote {
+  margin-top: var(--ref-spacing-xl);
+  margin-bottom: var(--ref-spacing-xl);
+}
+
+.f-article .f-ul {
+  margin-top: var(--ref-spacing-base);
+  margin-bottom: var(--ref-spacing-base);
+}
+
+.f-article .f-ol {
+  margin-top: var(--ref-spacing-base);
+  margin-bottom: var(--ref-spacing-base);
+}
+
+.f-article .f-li {
+  margin-top: var(--ref-spacing-xs);
+  margin-bottom: var(--ref-spacing-xs);
+}

@@ -1,54 +1,46 @@
-/* Capabilities: stacked rows, no table borders */
-.f-landing-capabilities-list {
-  display: flex;
-  flex-direction: column;
+/* Capabilities: bordered table, darker rows */
+.f-landing-capabilities-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: var(--ref-border-width-thin) solid var(--sys-outline);
+  font-size: var(--ref-text-sm);
 }
 
-.f-landing-capability {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: var(--ref-spacing-lg);
-  padding-top: var(--ref-spacing-md);
-  padding-bottom: var(--ref-spacing-md);
-  border-bottom: var(--ref-border-width-thin) solid var(--sys-outline);
+.f-landing-capability td {
+  padding: var(--ref-spacing-lg);
+  background: var(--sys-surface);
+  vertical-align: middle;
+  color: var(--sys-on-surface-variant);
+  white-space: nowrap;
+  width: 0;
 }
 
-.f-landing-capability:first-child {
+.f-landing-capability td:nth-child(2) {
+  white-space: normal;
+  width: 100%;
+}
+
+.f-landing-capability:hover td {
+  background: var(--sys-hover);
+}
+
+.f-landing-capability + .f-landing-capability td {
   border-top: var(--ref-border-width-thin) solid var(--sys-outline);
 }
 
-.f-landing-capability-content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--ref-spacing-2xs);
-}
-
 .f-landing-capability-feature {
-  font-size: var(--ref-text-sm);
   font-weight: var(--ref-font-bold);
   color: var(--sys-on-surface);
 }
 
-.f-landing-capability-description {
-  font-size: var(--ref-text-sm);
-  color: var(--sys-on-surface-variant);
+.f-landing-capability td:last-child {
+  text-align: right;
 }
 
 .f-landing-capability-link {
   display: inline-flex;
   align-items: center;
   gap: var(--ref-spacing-2xs);
-  font-size: var(--ref-text-sm);
-  color: var(--sys-on-surface-variant);
-  text-decoration: none;
-  white-space: nowrap;
-  transition-duration: var(--ref-duration-fast);
-  transition-timing-function: var(--ref-ease-out);
-}
-
-.f-landing-capability-link:hover {
-  color: var(--sys-on-surface);
 }
 
 .f-landing-capability-link .f-icon {

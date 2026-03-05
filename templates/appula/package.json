@@ -1,5 +1,5 @@
 {
-  "name": "@foundation/appula",
+  "name": "@zoobz.io/appula",
   "type": "module",
   "private": true,
   "version": "0.0.1",
@@ -17,8 +17,8 @@
     "typecheck": "nuxi typecheck"
   },
   "dependencies": {
-    "@foundation/blocks": "workspace:*",
-    "@foundation/iconic": "workspace:*",
+    "@zoobz.io/blocks": "workspace:*",
+    "@zoobz.io/iconic": "workspace:*",
     "@pinia/nuxt": "catalog:",
     "pinia": "catalog:"
   },

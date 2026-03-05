@@ -34,3 +34,16 @@
 .f-a:visited {
   color: var(--sys-secondary);
 }
+
+.f-a:visited .f-icon {
+  color: var(--sys-secondary);
+}
+
+.f-a:visited:not(:disabled):not([data-disabled]):hover {
+  color: var(--sys-secondary);
+  text-decoration: underline;
+}
+
+.f-a:visited:not(:disabled):not([data-disabled]):focus-visible {
+  color: var(--sys-secondary);
+}

@@ -28,8 +28,6 @@
   border-left-style: solid;
   border-color: var(--sys-outline);
   cursor: pointer;
-  transition-duration: var(--ref-duration-fast);
-  transition-timing-function: var(--ref-ease-out);
 }
 
 .f-surround-prev:hover {
@@ -70,8 +68,6 @@
   border-left-style: solid;
   border-color: var(--sys-outline);
   cursor: pointer;
-  transition-duration: var(--ref-duration-fast);
-  transition-timing-function: var(--ref-ease-out);
 }
 
 .f-surround-next:hover {

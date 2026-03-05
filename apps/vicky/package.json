@@ -12,9 +12,9 @@
     "typecheck": "nuxi typecheck"
   },
   "dependencies": {
-    "@foundation/appula": "workspace:*",
-    "@foundation/blocks": "workspace:*",
-    "@foundation/iconic": "workspace:*",
+    "@zoobz.io/appula": "workspace:*",
+    "@zoobz.io/blocks": "workspace:*",
+    "@zoobz.io/iconic": "workspace:*",
     "openapi-fetch": "^0.13.5"
   },
   "devDependencies": {

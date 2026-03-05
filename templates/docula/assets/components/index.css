@@ -17,6 +17,7 @@
 @import "./contentGrid.css";
 @import "./contentTable.css";
 @import "./dialog.css";
+@import "./doculaFooter.css";
 @import "./fab.css";
 @import "./footer.css";
 @import "./group.css";
@@ -28,6 +29,7 @@
 @import "./landingCapabilities.css";
 @import "./landingHighlights.css";
 @import "./landingInstall.css";
+@import "./landingStats.css";
 @import "./input.css";
 @import "./label.css";
 @import "./link.css";
@@ -37,6 +39,7 @@
 @import "./nav.css";
 @import "./navList.css";
 @import "./popover.css";
+@import "./scroller.css";
 @import "./search.css";
 @import "./section.css";
 @import "./select.css";
@@ -48,4 +51,3 @@
 @import "./tooltip.css";
 @import "./topbar.css";
 @import "./typography.css";
-@import "./versionSelect.css";

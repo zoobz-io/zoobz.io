@@ -17,7 +17,9 @@ const copyCode = async () => {
 
 <template>
   <Pre>
-    <Fab class="f-prose-pre" :disabled="copied" :icon="copied ? 'check' : 'copy'" @click="copyCode" />
+    <Tooltip align="end" :content="copied ? 'Copied!' : 'Copy code'">
+      <Fab class="f-prose-pre" :disabled="copied" :icon="copied ? 'check' : 'copy'" label="Copy code" @click="copyCode" />
+    </Tooltip>
     <slot />
   </Pre>
 </template>

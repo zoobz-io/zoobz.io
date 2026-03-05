@@ -3,20 +3,18 @@
   color: var(--sys-on-surface);
 }
 
-/* Nav as direct child of Main = left sidebar (fixed overlay) */
+/* Nav as direct child of Main = left sidebar (sticky) */
 .f-main > .f-nav {
-  position: fixed;
-  left: 0;
-  top: var(--ref-height-header);
-  height: calc(100vh - var(--ref-height-header));
+  align-self: stretch;
   border-right: var(--ref-border-width-thin) solid var(--sys-outline);
-  background: var(--sys-surface);
-  z-index: 10;
+  background: var(--sys-surface-container);
 }
 
-/* Aside inside left sidebar */
+/* Aside inside left sidebar - sticky within nav bounds */
 .f-main > .f-nav > .f-aside {
-  max-height: 100%;
+  position: sticky;
+  top: var(--f-header-height);
+  max-height: calc(100vh - var(--f-header-height));
   overflow-y: auto;
 }
 
@@ -28,7 +26,7 @@
 /* Aside inside right sidebar - sticky within Nav bounds */
 .f-container > .f-nav > .f-aside {
   position: sticky;
-  top: var(--ref-height-header);
-  max-height: calc(100vh - var(--ref-height-header));
+  top: var(--f-header-height);
+  max-height: calc(100vh - var(--f-header-height));
   overflow-y: auto;
 }

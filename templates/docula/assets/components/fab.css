@@ -3,11 +3,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--ref-text-sm);
+  font-size: var(--ref-text-base);
+  line-height: var(--ref-leading-none);
   background: var(--sys-surface);
   color: var(--sys-on-surface-variant);
   cursor: pointer;
-  padding: var(--ref-spacing-sm);
+  padding: var(--ref-spacing-xs);
   border: var(--ref-border-width-thin) solid var(--sys-outline);
   outline: none;
 }

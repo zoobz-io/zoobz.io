@@ -1,5 +1,5 @@
 {
-  "name": "@foundation/prose",
+  "name": "@zoobz.io/prose",
   "type": "module",
   "license": "MIT",
   "version": "0.0.1",
@@ -23,10 +23,9 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@foundation/blocks": "workspace:*",
-    "@foundation/untheme": "workspace:*",
+    "@zoobz.io/blocks": "workspace:*",
+    "@zoobz.io/untheme": "workspace:*",
     "@nuxt/content": "^3.8.0",
-    "@vueuse/core": "^11.3.0",
     "better-sqlite3": "^12.4.1",
     "nuxt": "catalog:",
     "pg": "^8.13.1",

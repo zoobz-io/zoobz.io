@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { DateFilterableStore, DateFilter, DateFilterOperator, Option } from "@foundation/blocks/types/common";
+import type { DateFilterableStore, DateFilter, DateFilterOperator, Option } from "@zoobz.io/blocks/types/common";
 import type { DateValue } from "@internationalized/date";
-import type { DateRange } from "@foundation/blocks/types/date-range-picker";
+import type { DateRange } from "@zoobz.io/blocks/types/date-range-picker";
 
 const props = defineProps<{
   store: DateFilterableStore;

@@ -46,6 +46,7 @@
   color: var(--sys-on-surface);
   font-size: var(--ref-text-base);
   font-weight: var(--ref-font-bold);
+  line-height: var(--ref-leading-none);
   flex-grow: 1;
   min-width: var(--ref-spacing-none);
 }

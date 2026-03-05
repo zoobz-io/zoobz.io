@@ -2,7 +2,7 @@ import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-11-17",
-  extends: ["@foundation/appula"],
+  extends: ["@zoobz.io/appula"],
   modules: ["./modules/vicky"],
   runtimeConfig: {
     vicky: {

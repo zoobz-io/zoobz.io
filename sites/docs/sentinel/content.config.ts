@@ -1,5 +1,6 @@
 import { defineCollection, defineContentConfig, z } from "@nuxt/content";
-import { defineGitHubTagSource } from "@foundation/github/sources/github-tags";
+import { defineGitHubTagSource } from "@zoobz.io/github/sources/github-tags";
+import { defineGitHubResourceSource } from "@zoobz.io/github/sources/github-resources";
 
 export default defineContentConfig({
   collections: {
@@ -15,6 +16,15 @@ export default defineContentConfig({
         updated: z.date().optional(),
         readtime: z.string().optional(),
         tags: z.array(z.string()).optional(),
+      }),
+    }),
+    resources: defineCollection({
+      type: "page",
+      source: defineGitHubResourceSource({
+        repository: "zoobzio/sentinel",
+      }),
+      schema: z.object({
+        icon: z.string().optional(),
       }),
     }),
   },

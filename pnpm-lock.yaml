@@ -47,13 +47,13 @@ importers:
 
   apps/vicky:
     dependencies:
-      '@foundation/appula':
+      '@zoobz.io/appula':
         specifier: workspace:*
         version: link:../../templates/appula
-      '@foundation/blocks':
+      '@zoobz.io/blocks':
         specifier: workspace:*
         version: link:../../layers/blocks
-      '@foundation/iconic':
+      '@zoobz.io/iconic':
         specifier: workspace:*
         version: link:../../packages/iconic
       openapi-fetch:
@@ -75,24 +75,21 @@ importers:
 
   layers/blocks:
     dependencies:
-      '@foundation/iconic':
-        specifier: workspace:*
-        version: link:../../packages/iconic
-      '@foundation/untheme':
-        specifier: workspace:*
-        version: link:../../packages/untheme
       '@internationalized/date':
         specifier: ^3.7.0
         version: 3.11.0
       '@pinia/nuxt':
         specifier: 'catalog:'
         version: 0.11.3(magicast@0.5.2)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.28(typescript@5.9.3)))
-      '@vueuse/core':
-        specifier: ^11.3.0
-        version: 11.3.0(vue@3.5.28(typescript@5.9.3))
       '@vueuse/nuxt':
         specifier: ^14.1.0
         version: 14.2.0(magicast@0.5.2)(nuxt@4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2))(vue@3.5.28(typescript@5.9.3))
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../packages/iconic
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../packages/untheme
       defu:
         specifier: 'catalog:'
         version: 6.1.4
@@ -115,6 +112,9 @@ importers:
       '@iconify-json/ic':
         specifier: ^1.2.4
         version: 1.2.4
+      '@iconify-json/simple-icons':
+        specifier: ^1.2.72
+        version: 1.2.72
       '@types/figlet':
         specifier: ^1.7.0
         version: 1.7.0
@@ -142,18 +142,15 @@ importers:
 
   layers/prose:
     dependencies:
-      '@foundation/blocks':
-        specifier: workspace:*
-        version: link:../blocks
-      '@foundation/untheme':
-        specifier: workspace:*
-        version: link:../../packages/untheme
       '@nuxt/content':
         specifier: ^3.8.0
         version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
-      '@vueuse/core':
-        specifier: ^11.3.0
-        version: 11.3.0(vue@3.5.28(typescript@5.9.3))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../blocks
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../packages/untheme
       better-sqlite3:
         specifier: ^12.4.1
         version: 12.6.2
@@ -189,6 +186,9 @@ importers:
         specifier: ^3.5.24
         version: 3.5.28(typescript@5.9.3)
     devDependencies:
+      '@iconify-json/simple-icons':
+        specifier: ^1.2.72
+        version: 1.2.72
       '@nuxt/kit':
         specifier: ^4.2.1
         version: 4.3.1(magicast@0.5.2)
@@ -223,15 +223,15 @@ importers:
 
   sites/blog:
     dependencies:
-      '@foundation/blogula':
-        specifier: workspace:*
-        version: link:../../templates/blogula
-      '@foundation/prose':
-        specifier: workspace:*
-        version: link:../../layers/prose
       '@nuxt/content':
         specifier: 'catalog:'
         version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
+      '@zoobz.io/blogula':
+        specifier: workspace:*
+        version: link:../../templates/blogula
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../layers/prose
     devDependencies:
       nuxt:
         specifier: 'catalog:'
@@ -242,27 +242,30 @@ importers:
 
   sites/docs/sentinel:
     dependencies:
-      '@foundation/blocks':
-        specifier: workspace:*
-        version: link:../../../layers/blocks
-      '@foundation/docula':
-        specifier: workspace:*
-        version: link:../../../templates/docula
-      '@foundation/iconic':
-        specifier: workspace:*
-        version: link:../../../packages/iconic
-      '@foundation/prose':
-        specifier: workspace:*
-        version: link:../../../layers/prose
-      '@foundation/untheme':
-        specifier: workspace:*
-        version: link:../../../packages/untheme
       '@nuxt/content':
         specifier: 'catalog:'
         version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../../layers/blocks
+      '@zoobz.io/docula':
+        specifier: workspace:*
+        version: link:../../../templates/docula
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../../packages/untheme
     devDependencies:
       '@iconify-json/circle-flags':
         specifier: ^1.2.10
@@ -282,15 +285,15 @@ importers:
 
   templates/appula:
     dependencies:
-      '@foundation/blocks':
-        specifier: workspace:*
-        version: link:../../layers/blocks
-      '@foundation/iconic':
-        specifier: workspace:*
-        version: link:../../packages/iconic
       '@pinia/nuxt':
         specifier: 'catalog:'
         version: 0.11.3(magicast@0.5.2)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.28(typescript@5.9.3)))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../layers/blocks
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../packages/iconic
       pinia:
         specifier: 'catalog:'
         version: 3.0.4(typescript@5.9.3)(vue@3.5.28(typescript@5.9.3))
@@ -304,7 +307,7 @@ importers:
 
   templates/blogula:
     dependencies:
-      '@foundation/prose':
+      '@zoobz.io/prose':
         specifier: workspace:*
         version: link:../../layers/prose
     devDependencies:
@@ -317,27 +320,27 @@ importers:
 
   templates/docula:
     dependencies:
-      '@foundation/blocks':
-        specifier: workspace:*
-        version: link:../../layers/blocks
-      '@foundation/github':
-        specifier: workspace:*
-        version: link:../../layers/github
-      '@foundation/iconic':
-        specifier: workspace:*
-        version: link:../../packages/iconic
-      '@foundation/prose':
-        specifier: workspace:*
-        version: link:../../layers/prose
-      '@foundation/untheme':
-        specifier: workspace:*
-        version: link:../../packages/untheme
       '@nuxt/content':
         specifier: 'catalog:'
         version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz.io/blocks':
+        specifier: workspace:*
+        version: link:../../layers/blocks
+      '@zoobz.io/github':
+        specifier: workspace:*
+        version: link:../../layers/github
+      '@zoobz.io/iconic':
+        specifier: workspace:*
+        version: link:../../packages/iconic
+      '@zoobz.io/prose':
+        specifier: workspace:*
+        version: link:../../layers/prose
+      '@zoobz.io/untheme':
+        specifier: workspace:*
+        version: link:../../packages/untheme
       minisearch:
         specifier: ^7.2.0
         version: 7.2.0
@@ -950,6 +953,9 @@ packages:
 
   '@iconify-json/ic@1.2.4':
     resolution: {integrity: sha512-pzPMmrZrBQuwT7nmtrYdkttun8KalRGgZPIL1Ny9KpF2zjRGIUPN+npTfuD3lrgO/OnSwAoJWuekQwBpt/Cqrw==}
+
+  '@iconify-json/simple-icons@1.2.72':
+    resolution: {integrity: sha512-wkcixntHvaCoqPqerGrNFcHQ3Yx1ux4ZkhscCDK0DEHpP62XCH+cxq1HTsRjbUiQl/M9K8bj03HF6Wgn5iE2rQ==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -1951,9 +1957,6 @@ packages:
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
 
-  '@types/web-bluetooth@0.0.20':
-    resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
-
   '@types/web-bluetooth@0.0.21':
     resolution: {integrity: sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA==}
 
@@ -2321,16 +2324,10 @@ packages:
   '@vue/shared@3.5.28':
     resolution: {integrity: sha512-cfWa1fCGBxrvaHRhvV3Is0MgmrbSCxYTXCSCau2I0a1Xw1N1pHAvkWCiXPRAqjvToILvguNyEwjevUqAuBQWvQ==}
 
-  '@vueuse/core@11.3.0':
-    resolution: {integrity: sha512-7OC4Rl1f9G8IT6rUfi9JrKiXy4bfmHhZ5x2Ceojy0jnd3mHNEvV4JaRygH362ror6/NZ+Nl+n13LPzGiPN8cKA==}
-
   '@vueuse/core@14.2.0':
     resolution: {integrity: sha512-tpjzVl7KCQNVd/qcaCE9XbejL38V6KJAEq/tVXj7mDPtl6JtzmUdnXelSS+ULRkkrDgzYVK7EerQJvd2jR794Q==}
     peerDependencies:
       vue: ^3.5.0
-
-  '@vueuse/metadata@11.3.0':
-    resolution: {integrity: sha512-pwDnDspTqtTo2HwfLw4Rp6yywuuBdYnPYDq+mO38ZYKGebCUQC/nVj/PXSiK9HX5otxLz8Fn7ECPbjiRz2CC3g==}
 
   '@vueuse/metadata@14.2.0':
     resolution: {integrity: sha512-i3axTGjU8b13FtyR4Keeama+43iD+BwX9C2TmzBVKqjSHArF03hjkp2SBZ1m72Jk2UtrX0aYCugBq2R1fhkuAQ==}
@@ -2340,9 +2337,6 @@ packages:
     peerDependencies:
       nuxt: ^3.0.0 || ^4.0.0-0
       vue: ^3.5.0
-
-  '@vueuse/shared@11.3.0':
-    resolution: {integrity: sha512-P8gSSWQeucH5821ek2mn/ciCk+MS/zoRKqdQIM3bHq6p7GXDAJLmnRRKmF5F65sAVJIfzQlwR3aDzwCn10s8hA==}
 
   '@vueuse/shared@14.2.0':
     resolution: {integrity: sha512-Z0bmluZTlAXgUcJ4uAFaML16JcD8V0QG00Db3quR642I99JXIDRa2MI2LGxiLVhcBjVnL1jOzIvT5TT2lqJlkA==}
@@ -6533,6 +6527,10 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
+  '@iconify-json/simple-icons@1.2.72':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify/types@2.0.0': {}
 
   '@iconify/utils@3.1.0':
@@ -7726,8 +7724,6 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
-  '@types/web-bluetooth@0.0.20': {}
-
   '@types/web-bluetooth@0.0.21': {}
 
   '@typescript-eslint/eslint-plugin@8.55.0(@typescript-eslint/parser@8.55.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)':
@@ -8272,24 +8268,12 @@ snapshots:
 
   '@vue/shared@3.5.28': {}
 
-  '@vueuse/core@11.3.0(vue@3.5.28(typescript@5.9.3))':
-    dependencies:
-      '@types/web-bluetooth': 0.0.20
-      '@vueuse/metadata': 11.3.0
-      '@vueuse/shared': 11.3.0(vue@3.5.28(typescript@5.9.3))
-      vue-demi: 0.14.10(vue@3.5.28(typescript@5.9.3))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-
   '@vueuse/core@14.2.0(vue@3.5.28(typescript@5.9.3))':
     dependencies:
       '@types/web-bluetooth': 0.0.21
       '@vueuse/metadata': 14.2.0
       '@vueuse/shared': 14.2.0(vue@3.5.28(typescript@5.9.3))
       vue: 3.5.28(typescript@5.9.3)
-
-  '@vueuse/metadata@11.3.0': {}
 
   '@vueuse/metadata@14.2.0': {}
 
@@ -8303,13 +8287,6 @@ snapshots:
       vue: 3.5.28(typescript@5.9.3)
     transitivePeerDependencies:
       - magicast
-
-  '@vueuse/shared@11.3.0(vue@3.5.28(typescript@5.9.3))':
-    dependencies:
-      vue-demi: 0.14.10(vue@3.5.28(typescript@5.9.3))
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
 
   '@vueuse/shared@14.2.0(vue@3.5.28(typescript@5.9.3))':
     dependencies:

@@ -18,6 +18,7 @@ export interface SearchResult {
 
 export function useSearch() {
   const { collection: collectionConfig } = useAppConfig();
+  const { current: versionPrefix } = useVersion();
   const results = ref<SearchResult[]>([]);
 
   const collection = collectionConfig?.key ?? "content";
@@ -28,7 +29,14 @@ export function useSearch() {
     { default: () => [] as SearchSection[] },
   );
 
-  const sectionsById = computed(() => new Map(sections.value.map((s) => [s.id, s])));
+  // Filter sections to current version before indexing
+  const versionSections = computed(() => {
+    const prefix = versionPrefix.value ? `/${versionPrefix.value}` : "";
+    if (!prefix) return sections.value;
+    return sections.value.filter((s) => s.id.startsWith(prefix));
+  });
+
+  const sectionsById = computed(() => new Map(versionSections.value.map((s) => [s.id, s])));
 
   const miniSearch = computed(() => {
     const ms = new MiniSearch<SearchSection>({
@@ -40,8 +48,8 @@ export function useSearch() {
       },
     });
 
-    if (sections.value.length > 0) {
-      ms.addAll(sections.value);
+    if (versionSections.value.length > 0) {
+      ms.addAll(versionSections.value);
     }
 
     return ms;

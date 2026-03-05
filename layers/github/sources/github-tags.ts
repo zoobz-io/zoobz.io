@@ -36,7 +36,7 @@ export interface VersionManifest {
  *
  * @example
  * ```ts
- * import { defineGitHubTagSource } from "@foundation/github/sources/github-tags";
+ * import { defineGitHubTagSource } from "@zoobz.io/github/sources/github-tags";
  *
  * export default defineContentConfig({
  *   collections: {
@@ -89,7 +89,7 @@ export function defineGitHubTagSource(options: GitHubTagSourceOptions) {
       }
 
       // Sort by semver (newest first)
-      const sorted = sortVersionsDesc(filtered);
+      let sorted = sortVersionsDesc(filtered);
 
       if (sorted.length === 0) {
         console.warn(

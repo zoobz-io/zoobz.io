@@ -1,5 +1,25 @@
 <script setup lang="ts">
+const { theme, themes, setTheme } = useUntheme();
+
 const open = ref(false);
+
+const formatLabel = (t: string) =>
+  t.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+
+const themeItems = computed(() =>
+  themes.value.map((t) => ({
+    value: t,
+    label: formatLabel(t),
+    disabled: t === theme.value,
+  })),
+);
+
+const displayLabel = computed(() => formatLabel(theme.value));
+
+const handleSelect = (value: string) => {
+  open.value = false;
+  setTheme(value);
+};
 
 const isMac = computed(() => {
   if (typeof navigator !== "undefined") {
@@ -12,23 +32,30 @@ const modKey = computed(() => (isMac.value ? "⌘" : "Ctrl"));
 </script>
 
 <template>
-  <Tooltip>
-    <Fab shortcut="meta+t" icon="theme" @click="open = true" />
+  <Popover v-model:open="open" side="top" align="end">
+    <Tooltip align="end">
+      <Fab shortcut="meta+t" icon="theme" label="Theme" @click="open = !open" />
+      <template #content>
+        <span>{{ displayLabel }}</span>
+        <Kbd>
+          {{ modKey }}
+          <Icon alias="plus" />
+          T
+        </Kbd>
+      </template>
+    </Tooltip>
     <template #content>
-      <span>Theme</span>
-      <Kbd>
-        {{ modKey }}
-        <Icon alias="plus" />
-        T
-      </Kbd>
+      <Command
+        :groups="[{ key: 'themes', items: themeItems }]"
+        placeholder="Search themes..."
+        @select="handleSelect"
+        @keydown.escape="open = false"
+      >
+        <template #item="{ item }">
+          <Icon v-if="item.disabled" alias="check" />
+          <span class="f-command-item-label">{{ item.label }}</span>
+        </template>
+      </Command>
     </template>
-  </Tooltip>
-
-  <Dialog
-    v-model:open="open"
-    title="I am a Theme selector!"
-    description="change your theme bro"
-  >
-    <P>Theme selection dialog content</P>
-  </Dialog>
+  </Popover>
 </template>

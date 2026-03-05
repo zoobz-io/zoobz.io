@@ -5,16 +5,6 @@ export interface SearchProps {
 </script>
 
 <script setup lang="ts">
-import {
-  ComboboxRoot,
-  ComboboxAnchor,
-  ComboboxPortal,
-  ComboboxContent,
-  ComboboxViewport,
-  ComboboxItem,
-  ComboboxEmpty,
-} from "reka-ui";
-
 withDefaults(defineProps<SearchProps>(), {
   placeholder: "Search...",
 });
@@ -22,18 +12,27 @@ withDefaults(defineProps<SearchProps>(), {
 const router = useRouter();
 const { results, search } = useSearch();
 const { collection: collectionConfig } = useAppConfig();
+const { current: versionPrefix } = useVersion();
 
 const collection = collectionConfig?.key ?? "content";
 const { data: navigation } = await useAsyncData(
   `nav-${collection}`,
-  () => queryCollectionNavigation(collection),
+  () => queryCollectionNavigation(collection, ["description"]),
 );
 
 const pathToIcon = computed(() => {
   const map = new Map<string, IconAlias>();
   if (!collectionConfig?.navIcons || !navigation.value) return map;
 
-  for (const folder of navigation.value) {
+  let folders = navigation.value;
+  if (versionPrefix.value) {
+    const versionNode = folders.find(
+      (s) => s.path === `/${versionPrefix.value}`,
+    );
+    if (versionNode?.children) folders = versionNode.children;
+  }
+
+  for (const folder of folders) {
     if (folder.path && folder.title) {
       const icon = collectionConfig.navIcons[folder.title];
       if (icon) {
@@ -43,6 +42,24 @@ const pathToIcon = computed(() => {
   }
   return map;
 });
+
+const getDescription = (path: string): string | undefined => {
+  if (!navigation.value) return undefined;
+
+  const walk = (items: typeof navigation.value): string | undefined => {
+    for (const item of items) {
+      if (item.path === path && typeof item.description === "string") {
+        return item.description;
+      }
+      if (item.children) {
+        const found = walk(item.children);
+        if (found) return found;
+      }
+    }
+    return undefined;
+  };
+  return walk(navigation.value);
+};
 
 const getIcon = (path: string) => {
   for (const [folderPath, icon] of pathToIcon.value) {
@@ -54,9 +71,8 @@ const getIcon = (path: string) => {
 };
 
 const open = ref(false);
-const searchTerm = ref("");
-const closingTimeout = ref<ReturnType<typeof setTimeout> | null>(null);
 
+const searchTerm = ref("");
 const isMac = computed(() => {
   if (typeof navigator !== "undefined") {
     return navigator.platform.toUpperCase().includes("MAC");
@@ -66,79 +82,136 @@ const isMac = computed(() => {
 
 const modKey = computed(() => (isMac.value ? "⌘" : "Ctrl"));
 
-watch(open, (isOpen) => {
-  if (!isOpen) {
-    closingTimeout.value = setTimeout(() => {
-      closingTimeout.value = null;
-    }, 100);
-  }
+const keys = useMagicKeys();
+const metaK = computed(() => keys["meta+k"]?.value);
+whenever(metaK, () => {
+  open.value = !open.value;
 });
 
-const handleFocus = () => {
-  if (!closingTimeout.value) {
-    open.value = true;
-  }
-};
-
-const handleInput = (value: string) => {
-  searchTerm.value = value;
+// Trigger full-text search when searchTerm changes
+watch(searchTerm, (value) => {
   search(value);
-};
+});
 
-const handleSelect = (path: string) => {
+// Navigation groups (default view when no search term)
+const navGroups = computed(() => {
+  if (!navigation.value) return [];
+
+  let sections = navigation.value;
+
+  if (versionPrefix.value) {
+    const versionNode = sections.find(
+      (s) => s.path === `/${versionPrefix.value}`,
+    );
+    if (!versionNode?.children) return [];
+    sections = versionNode.children;
+  }
+
+  return sections
+    .filter((s) => s.children && s.children.length > 0)
+    .map((folder) => ({
+      key: folder.path,
+      items: (folder.children ?? [])
+        .filter((child) => !child.children)
+        .map((child) => ({
+          value: child.path,
+          label: child.title,
+        })),
+    }))
+    .filter((g) => g.items.length > 0);
+});
+
+// Search result group — deduplicated to page level
+const searchGroups = computed(() => {
+  if (results.value.length === 0) return [];
+
+  const pageMap = new Map<string, { title: string; score: number }>();
+  for (const r of results.value) {
+    const existing = pageMap.get(r.path);
+    if (!existing || r.score > existing.score) {
+      pageMap.set(r.path, {
+        title: r.titles.length > 0 ? r.titles[0] : r.title,
+        score: r.score,
+      });
+    }
+  }
+
+  return [
+    {
+      key: "results",
+      items: [...pageMap.entries()].map(([path, p]) => ({
+        value: path,
+        label: p.title,
+      })),
+    },
+  ];
+});
+
+const groups = computed(() =>
+  searchTerm.value ? searchGroups.value : navGroups.value,
+);
+
+const handleSelect = (value: string) => {
   open.value = false;
   searchTerm.value = "";
-  router.push(path);
+  router.push(value);
+};
+
+const handleOpenChange = (value: boolean) => {
+  open.value = value;
+  if (!value) {
+    searchTerm.value = "";
+  }
 };
 </script>
 
 <template>
-  <ComboboxRoot
-    v-model:open="open"
-    :ignore-filter="true"
-    class="f-search-root"
-  >
-    <ComboboxAnchor as-child>
-      <Input
-        :model-value="searchTerm"
-        :placeholder="placeholder"
-        shortcut="meta+k"
-        @focus="handleFocus"
-        @update:model-value="handleInput"
-      >
-        <template #prepend>
-          <Icon alias="search" />
-        </template>
-        <template #append>
-          <Kbd>{{ modKey }} + K</Kbd>
-        </template>
-      </Input>
-    </ComboboxAnchor>
-    <ComboboxPortal>
-      <ComboboxContent class="f-search-results" position="popper">
-        <ComboboxViewport>
-          <ComboboxEmpty class="f-search-empty">
-            {{ searchTerm ? "No results found" : "Start typing to search..." }}
-          </ComboboxEmpty>
+  <button class="f-search-trigger" @click="open = true">
+    <Icon alias="search" />
+    <span class="f-search-trigger-text">{{ placeholder }}</span>
+    <Kbd>{{ modKey }} + K</Kbd>
+  </button>
 
-          <ComboboxItem
-            v-for="result in results"
-            :key="result.id"
-            :value="result.path"
-            class="f-search-item"
-            as-child
-          >
-            <NuxtLink :to="result.path" @click="handleSelect(result.path)">
-              <Icon v-if="getIcon(result.path)" :alias="getIcon(result.path)" class="f-search-icon" />
-              <span>{{ result.title }}</span>
-              <template v-if="result.titles.length > 0">
-                <Icon alias="chevron-right" class="f-search-separator" />
-                <span>{{ result.titles[result.titles.length - 1] }}</span>
-              </template>
-            </NuxtLink>
-          </ComboboxItem>
-        </ComboboxViewport>
-      </ComboboxContent>
-    </ComboboxPortal>
-  </ComboboxRoot>
+  <DialogRoot :open="open" @update:open="handleOpenChange">
+    <DialogPortal>
+      <DialogOverlay class="f-dialog-overlay" />
+      <DialogContent class="f-search-content">
+        <VisuallyHidden>
+          <DialogTitle>Search</DialogTitle>
+        </VisuallyHidden>
+
+        <Command
+          v-model:search-term="searchTerm"
+          :groups="groups"
+          :filtered="!!searchTerm"
+          :placeholder="placeholder"
+          @select="handleSelect"
+          @keydown.escape="handleOpenChange(false)"
+        >
+          <template #input-icon>
+            <Icon alias="search" class="f-search-icon" />
+          </template>
+          <template #group-label="{ group }">
+            <Icon
+              v-if="group.label && collectionConfig?.navIcons?.[group.label]"
+              :alias="collectionConfig!.navIcons![group.label]"
+              class="f-search-icon"
+            />
+            {{ group.label }}
+          </template>
+          <template #item="{ item }">
+            <Icon
+              v-if="getIcon(item.value)"
+              :alias="getIcon(item.value)!"
+              class="f-search-icon"
+            />
+            <span>{{ item.label }}</span>
+            <span v-if="getDescription(item.value)" class="f-command-item-description">
+              {{ getDescription(item.value) }}
+            </span>
+          </template>
+        </Command>
+      </DialogContent>
+    </DialogPortal>
+  </DialogRoot>
 </template>

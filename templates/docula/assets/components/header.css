@@ -1,3 +1,9 @@
+:root {
+  --f-header-height: calc(
+    2 * var(--ref-spacing-sm) + 2 * var(--ref-spacing-xs) + var(--ref-text-base) + 3 * var(--ref-border-width-thin)
+  );
+}
+
 .f-header {
   background: var(--sys-surface-container);
   color: var(--sys-on-surface);
@@ -10,6 +16,7 @@
   border-bottom-width: var(--ref-border-width-thin);
   border-color: var(--sys-outline);
   width: 100%;
+  height: var(--f-header-height);
   padding: var(--ref-spacing-sm) var(--ref-spacing-md);
   position: sticky;
   top: 0;

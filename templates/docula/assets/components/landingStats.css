@@ -1,0 +1,32 @@
+.f-landing-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-landing-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--ref-spacing-2xs);
+}
+
+.f-landing-stat-value {
+  font-size: var(--ref-text-4xl);
+  font-weight: var(--ref-font-bold);
+  color: var(--sys-primary);
+  letter-spacing: var(--ref-tracking-tight);
+}
+
+.f-landing-stat-label {
+  font-size: var(--ref-text-base);
+  font-weight: var(--ref-font-bold);
+  color: var(--sys-on-surface-variant);
+}
+
+@media (max-width: 768px) {
+  .f-landing-stats {
+    flex-wrap: wrap;
+    gap: var(--ref-spacing-2xl);
+    justify-content: center;
+  }
+}

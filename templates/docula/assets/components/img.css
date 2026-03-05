@@ -5,3 +5,12 @@
   margin-top: var(--ref-spacing-lg);
   margin-bottom: var(--ref-spacing-lg);
 }
+
+/* Badge images (shield.io, etc.) → inline */
+.f-img[src*="badge"],
+.f-img[src*="shields.io"] {
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: var(--ref-spacing-2xs);
+}

@@ -26,8 +26,6 @@
   border-color: var(--sys-outline);
   cursor: pointer;
   width: 100%;
-  transition-duration: var(--ref-duration-fast);
-  transition-timing-function: var(--ref-ease-out);
 }
 
 .f-select-trigger:hover {
@@ -71,8 +69,6 @@
   padding-left: var(--ref-spacing-md);
   cursor: pointer;
   font-size: var(--ref-text-base);
-  transition-duration: var(--ref-duration-fast);
-  transition-timing-function: var(--ref-ease-out);
 }
 
 .f-select-item:hover {

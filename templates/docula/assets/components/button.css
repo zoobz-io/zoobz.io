@@ -6,6 +6,7 @@
   color: var(--sys-on-primary);
   font-size: var(--ref-text-base);
   font-weight: var(--ref-font-bold);
+  line-height: var(--ref-leading-none);
   white-space: nowrap;
   padding-left: var(--ref-spacing-sm);
   padding-right: var(--ref-spacing-sm);

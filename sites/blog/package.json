@@ -12,8 +12,8 @@
     "typecheck": "nuxi typecheck"
   },
   "dependencies": {
-    "@foundation/blogula": "workspace:*",
-    "@foundation/prose": "workspace:*",
+    "@zoobz.io/blogula": "workspace:*",
+    "@zoobz.io/prose": "workspace:*",
     "@nuxt/content": "catalog:"
   },
   "devDependencies": {

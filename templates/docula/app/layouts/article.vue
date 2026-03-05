@@ -4,7 +4,6 @@ const { current } = useVersion();
 </script>
 
 <template>
-  <VersionBanner />
   <Main>
     <TopBar />
     <Left border>
@@ -15,5 +14,6 @@ const { current } = useVersion();
       />
     </Left>
     <slot />
+    <DoculaFooter />
   </Main>
 </template>

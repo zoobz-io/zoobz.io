@@ -60,6 +60,25 @@
   border-top-color: var(--sys-surface-container);
 }
 
+/* Bottom/Top align end (caret to the right) */
+.f-tooltip-content[data-side="bottom"][data-align="end"]::before,
+.f-tooltip-content[data-side="bottom"][data-align="end"]::after,
+.f-tooltip-content[data-side="top"][data-align="end"]::before,
+.f-tooltip-content[data-side="top"][data-align="end"]::after {
+  left: auto;
+  right: var(--ref-spacing-sm);
+  margin-left: 0;
+}
+
+/* Bottom/Top align start (caret to the left) */
+.f-tooltip-content[data-side="bottom"][data-align="start"]::before,
+.f-tooltip-content[data-side="bottom"][data-align="start"]::after,
+.f-tooltip-content[data-side="top"][data-align="start"]::before,
+.f-tooltip-content[data-side="top"][data-align="start"]::after {
+  left: var(--ref-spacing-sm);
+  margin-left: 0;
+}
+
 /* Left side (arrow points right) */
 .f-tooltip-content[data-side="left"]::before {
   right: -6px;

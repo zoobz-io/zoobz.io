@@ -6,33 +6,33 @@
   overflow-y: hidden;
 }
 
-.f-command-input {
-  background: var(--sys-surface);
-  color: var(--sys-on-surface);
-  border-top-width: var(--ref-border-width-none);
-  border-right-width: var(--ref-border-width-none);
+.f-command-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--ref-spacing-sm);
+  background: var(--sys-surface-container);
   border-bottom-width: var(--ref-border-width-thin);
-  border-left-width: var(--ref-border-width-none);
-  border-top-style: none;
-  border-right-style: none;
   border-bottom-style: solid;
-  border-left-style: none;
   border-color: var(--sys-outline-variant);
+  padding-left: var(--ref-spacing-md);
+}
+
+.f-command-input {
+  background: transparent;
+  color: var(--sys-on-surface);
+  border-width: 0;
   outline-width: 0;
   padding-top: var(--ref-spacing-sm);
   padding-right: var(--ref-spacing-md);
   padding-bottom: var(--ref-spacing-sm);
-  padding-left: var(--ref-spacing-md);
+  padding-left: 0;
   font-size: var(--ref-text-sm);
-  width: 100%;
+  flex-grow: 1;
+  min-width: 0;
 }
 
-.f-command-input:hover {
-  border-color: var(--sys-outline-variant);
-}
-
-.f-command-input:focus-visible {
-  border-color: var(--sys-outline-variant);
+.f-command-input-wrapper:focus-within {
   box-shadow: var(--ref-shadow-focus-inset);
 }
 
@@ -44,6 +44,7 @@
   flex-shrink: 1;
   min-height: 0;
   overflow-y: auto;
+  background: var(--sys-surface);
 }
 
 .f-command-viewport {
@@ -51,6 +52,7 @@
   flex-direction: column;
   flex-grow: 1;
   min-height: 0;
+  overflow-y: auto;
 }
 
 .f-command-group {
@@ -72,7 +74,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--ref-spacing-xs);
+  gap: var(--ref-spacing-md);
   padding-top: var(--ref-spacing-sm);
   padding-right: var(--ref-spacing-md);
   padding-bottom: var(--ref-spacing-sm);
@@ -80,9 +82,8 @@
   background: var(--ref-color-transparent);
   cursor: pointer;
   text-align: start;
+  white-space: nowrap;
   width: 100%;
-  transition-duration: var(--ref-duration-fast);
-  transition-timing-function: var(--ref-ease-out);
 }
 
 .f-command-item:hover {
@@ -97,6 +98,22 @@
 .f-command-item[data-state='checked'],
 .f-command-item[data-highlighted] {
   background: var(--sys-hover);
+}
+
+.f-command-item[data-disabled] {
+  color: var(--sys-muted);
+  cursor: default;
+}
+
+.f-command-item-description {
+  color: var(--sys-muted);
+  font-size: var(--ref-text-xs);
+  margin-left: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  min-width: 0;
 }
 
 .f-command-empty {

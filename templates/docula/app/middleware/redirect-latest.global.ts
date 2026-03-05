@@ -1,4 +1,7 @@
 export default defineNuxtRouteMiddleware((to) => {
+  // Skip internal paths that may match the [version] route param
+  if (to.path.startsWith("/_") || to.path.startsWith("/__")) return;
+
   const appConfig = useAppConfig();
   const versionConfig = appConfig.version;
   const versions = versionConfig?.versions ?? [];

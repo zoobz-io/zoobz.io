@@ -2,7 +2,7 @@ import { defineNuxtConfig } from "nuxt/config";
 import highlights from "./config/highlights";
 
 export default defineNuxtConfig({
-  extends: ["@foundation/blocks"],
+  extends: ["@zoobz.io/blocks"],
   imports: {
     dirs: ["types"],
   },

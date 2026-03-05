@@ -8,29 +8,32 @@
 .f-landing-highlight {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: var(--ref-spacing-xs);
-  padding: var(--ref-spacing-lg);
+  gap: var(--ref-spacing-sm);
+  padding: var(--ref-spacing-xl);
+  min-height: 12rem;
   background: var(--sys-surface-container);
   border: var(--ref-border-width-thin) solid var(--sys-outline);
 }
 
 .f-landing-highlight-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: var(--sys-on-surface-variant);
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--sys-primary);
+  margin-bottom: var(--ref-spacing-xs);
 }
 
 .f-landing-highlight-title {
   font-size: var(--ref-text-sm);
-  font-weight: var(--ref-font-bold);
-  color: var(--sys-on-surface);
-  margin: 0;
 }
 
 .f-landing-highlight-description {
   font-size: var(--ref-text-sm);
   color: var(--sys-on-surface-variant);
-  margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .f-landing-highlights-grid {
+    grid-template-columns: 1fr;
+  }
 }

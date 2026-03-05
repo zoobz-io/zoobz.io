@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { FacetableStore } from "@foundation/blocks/types/common";
+import type { FacetableStore } from "@zoobz.io/blocks/types/common";
 
 const props = defineProps<{
   store: FacetableStore;

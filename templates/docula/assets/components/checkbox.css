@@ -19,8 +19,6 @@
   border-bottom-right-radius: var(--ref-radius-sm);
   border-bottom-left-radius: var(--ref-radius-sm);
   cursor: pointer;
-  transition-duration: var(--ref-duration-fast);
-  transition-timing-function: var(--ref-ease-out);
 }
 
 .f-checkbox-root:not(:disabled):not([data-disabled]):hover {

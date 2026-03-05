@@ -4,7 +4,7 @@ const { resolve } = createResolver(import.meta.url);
 
 export default defineNuxtModule({
   meta: {
-    name: "@foundation/docula-css",
+    name: "@zoobz.io/docula-css",
     configKey: "doculaCss",
   },
   defaults: {

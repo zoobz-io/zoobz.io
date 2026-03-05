@@ -1,6 +1,6 @@
 .f-dialog-overlay {
-  background: var(--sys-surface);
-  opacity: 0.5;
+  background: color-mix(in srgb, var(--sys-surface) 50%, transparent);
+  backdrop-filter: blur(4px);
   position: fixed;
   top: 0;
   left: 0;
@@ -10,15 +10,17 @@
 }
 
 .f-dialog-content {
-  background: var(--sys-surface-container);
+  background: var(--sys-surface);
   color: var(--sys-on-surface);
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: var(--ref-width-xl);
-  max-height: var(--ref-viewport-60);
+  width: var(--ref-width-container);
+  max-height: 80vh;
   overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
   border-top-width: var(--ref-border-width-thin);
   border-right-width: var(--ref-border-width-thin);
   border-bottom-width: var(--ref-border-width-thin);
@@ -31,26 +33,15 @@
   z-index: var(--ref-z-modal);
 }
 
-.f-dialog-title {
-  display: block;
-  color: var(--sys-on-surface);
-  font-size: var(--ref-text-lg);
-  font-weight: var(--ref-font-bold);
-  padding-top: var(--ref-spacing-md);
-  padding-right: var(--ref-spacing-md);
-  padding-bottom: var(--ref-spacing-xs);
-  padding-left: var(--ref-spacing-md);
-}
-
+.f-dialog-title,
 .f-dialog-description {
-  display: block;
-  color: var(--sys-on-surface-variant);
-  font-size: var(--ref-text-sm);
-  padding-top: var(--ref-spacing-xs);
-  padding-right: var(--ref-spacing-md);
-  padding-bottom: var(--ref-spacing-md);
-  padding-left: var(--ref-spacing-md);
-  border-bottom-width: var(--ref-border-width-thin);
-  border-bottom-style: solid;
-  border-color: var(--sys-outline-variant);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

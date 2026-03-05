@@ -4,8 +4,6 @@
   font-weight: var(--ref-font-normal);
   line-height: var(--ref-leading-normal);
   display: block;
-  margin-top: var(--ref-spacing-base);
-  margin-bottom: var(--ref-spacing-base);
 }
 
 .f-h1 {
@@ -14,8 +12,6 @@
   font-weight: var(--ref-font-bold);
   line-height: var(--ref-leading-tighter);
   display: block;
-  margin-top: var(--ref-spacing-none);
-  margin-bottom: var(--ref-spacing-xl);
 }
 
 .f-h2 {
@@ -24,19 +20,15 @@
   font-weight: var(--ref-font-bold);
   line-height: var(--ref-leading-snug);
   display: block;
-  margin-top: var(--ref-spacing-2xl);
-  margin-bottom: var(--ref-spacing-lg);
   scroll-margin-top: 6rem;
 }
 
 .f-h3 {
   color: var(--sys-on-surface);
-  font-size: var(--ref-text-2xl);
+  font-size: var(--ref-text-lg);
   font-weight: var(--ref-font-semibold);
   line-height: var(--ref-leading-cozy);
   display: block;
-  margin-top: var(--ref-spacing-xl);
-  margin-bottom: var(--ref-spacing-sm);
   scroll-margin-top: 6rem;
 }
 
@@ -46,8 +38,6 @@
   font-weight: var(--ref-font-semibold);
   line-height: var(--ref-leading-normal);
   display: block;
-  margin-top: var(--ref-spacing-lg);
-  margin-bottom: var(--ref-spacing-xs);
   scroll-margin-top: 6rem;
 }
 
@@ -57,8 +47,6 @@
   font-weight: var(--ref-font-semibold);
   line-height: var(--ref-leading-normal);
   display: block;
-  margin-top: var(--ref-spacing-lg);
-  margin-bottom: var(--ref-spacing-xs);
   scroll-margin-top: 6rem;
 }
 
@@ -68,8 +56,6 @@
   font-weight: var(--ref-font-medium);
   line-height: var(--ref-leading-normal);
   display: block;
-  margin-top: var(--ref-spacing-lg);
-  margin-bottom: var(--ref-spacing-xs);
   scroll-margin-top: 6rem;
 }
 
@@ -100,6 +86,7 @@
   font-family: var(--ref-font-mono);
   font-size: var(--ref-text-xs);
   font-weight: var(--ref-font-semibold);
+  line-height: var(--ref-leading-none);
   padding-top: var(--ref-spacing-2xs);
   padding-right: var(--ref-spacing-2xs);
   padding-bottom: var(--ref-spacing-2xs);
@@ -139,8 +126,6 @@
   border-color: var(--sys-outline);
   display: block;
   overflow-x: auto;
-  margin-top: var(--ref-spacing-base);
-  margin-bottom: var(--ref-spacing-base);
 }
 
 .f-strong {
@@ -165,8 +150,6 @@
   border-left-style: solid;
   border-color: var(--sys-outline);
   padding-left: var(--ref-spacing-lg);
-  margin-top: var(--ref-spacing-xl);
-  margin-bottom: var(--ref-spacing-xl);
   display: block;
 }
 
@@ -180,21 +163,15 @@
 .f-ul {
   list-style-type: disc;
   padding-left: var(--ref-spacing-xl);
-  margin-top: var(--ref-spacing-base);
-  margin-bottom: var(--ref-spacing-base);
   display: block;
 }
 
 .f-ol {
   list-style-type: decimal;
   padding-left: var(--ref-spacing-xl);
-  margin-top: var(--ref-spacing-base);
-  margin-bottom: var(--ref-spacing-base);
   display: block;
 }
 
 .f-li {
   display: list-item;
-  margin-top: var(--ref-spacing-xs);
-  margin-bottom: var(--ref-spacing-xs);
 }

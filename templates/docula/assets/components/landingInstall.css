@@ -1,11 +1,12 @@
 .f-landing-install {
   display: flex;
   flex-direction: column;
-  gap: var(--ref-spacing-xs);
+  gap: var(--ref-spacing-sm);
 }
 
 .f-landing-install-note {
   font-size: var(--ref-text-sm);
   color: var(--sys-on-surface-variant);
   margin: 0;
+  line-height: 1.5;
 }

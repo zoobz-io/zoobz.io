@@ -2,6 +2,7 @@
 import type { ParsedContentv2 } from "@nuxt/content";
 
 interface ContentWithMeta extends ParsedContentv2 {
+  stem?: string;
   author?: string;
   published?: string;
   updated?: string;
@@ -16,10 +17,12 @@ const props = defineProps<{
 }>();
 
 const editUrl = computed(() => {
-  if (!props.repo) return undefined;
-  // Convert repo URL to edit URL: https://github.com/owner/repo -> https://github.com/owner/repo/edit/main/content/...
+  if (!props.repo || !props.content?.stem) return undefined;
   const repoBase = props.repo.replace(/\/$/, "");
-  return `${repoBase}/edit/main/content${props.path}.md`;
+  // stem is "v1.0.3/1.learn/concepts" — strip the version prefix to get the repo-relative docs path
+  const stem = props.content.stem;
+  const docsRelative = stem.replace(/^[^/]+\//, "");
+  return `${repoBase}/edit/main/docs/${docsRelative}.md`;
 });
 </script>
 

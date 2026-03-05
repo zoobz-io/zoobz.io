@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import type { DateFilter, DateFieldConfig } from "@foundation/blocks/types/common";
+import type { DateFilter, DateFieldConfig } from "@zoobz.io/blocks/types/common";
 
 interface User {
   id: number;

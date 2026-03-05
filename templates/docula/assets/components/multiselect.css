@@ -22,8 +22,6 @@
   border-color: var(--sys-outline);
   cursor: pointer;
   width: 100%;
-  transition-duration: var(--ref-duration-fast);
-  transition-timing-function: var(--ref-ease-out);
 }
 
 .f-multiselect-trigger:hover {
@@ -70,8 +68,6 @@
   text-align: left;
   border: none;
   width: 100%;
-  transition-duration: var(--ref-duration-fast);
-  transition-timing-function: var(--ref-ease-out);
 }
 
 .f-multiselect-item:hover {
