@@ -1,55 +1,59 @@
 <script setup lang="ts">
-const { data: posts } = await useAsyncData("posts", () =>
-  queryCollection("content").order("published", "DESC").all(),
+import type { TimelineItem } from "../components/Timeline.vue";
+
+const appConfig = useAppConfig();
+
+const { data: landing } = await useAsyncData("landing", () =>
+  queryCollection("landing").first(),
 );
 
-const formatDate = (dateString?: string) => {
-  if (!dateString) return "";
-  const date = new Date(dateString);
-  return date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
+const { data: posts } = await useAsyncData("posts", () =>
+  queryCollection("posts").order("published", "DESC").all(),
+);
+
+const timelineItems = computed<TimelineItem[]>(() => {
+  const postItems: TimelineItem[] = (posts.value ?? []).map((p) => ({
+    type: "post" as const,
+    id: p.id,
+    path: p.path,
+    title: p.title,
+    description: p.description,
+    published: p.published,
+    tags: p.tags,
+  }));
+
+  const eventItems: TimelineItem[] = (appConfig.events ?? []).map((e) => ({
+    type: "event" as const,
+    ...e,
+  }));
+
+  return [...postItems, ...eventItems].sort((a, b) => {
+    const dateA = a.type === "post" ? a.published : a.date;
+    const dateB = b.type === "post" ? b.published : b.date;
+    if (!dateA) return 1;
+    if (!dateB) return -1;
+    return new Date(dateB).getTime() - new Date(dateA).getTime();
   });
-};
+});
 </script>
 
 <template>
-  <Section>
-    <Article>
-      <H1>Blog</H1>
-      <P>Recent posts</P>
-    </Article>
-    <Hr />
-    <nav v-if="posts?.length">
-      <NuxtLink
-        v-for="post in posts"
-        :key="post.id"
-        :to="post.path"
-        class="f-blog-post-link"
-      >
-        <H3>{{ post.title }}</H3>
-        <P v-if="post.description">{{ post.description }}</P>
-        <small v-if="post.published">{{ formatDate(post.published) }}</small>
-      </NuxtLink>
-    </nav>
-    <P v-else>No posts yet.</P>
-  </Section>
+  <div class="f-blog-page">
+    <div class="f-blog-lead" />
+
+    <div class="f-blog-hero-section">
+      <div class="f-blog-section-inner">
+        <Article v-if="landing" class="f-landing-hero">
+          <ContentRenderer :value="landing" />
+        </Article>
+      </div>
+    </div>
+
+    <div class="f-blog-timeline-section">
+      <div class="f-blog-section-inner">
+        <Timeline v-if="timelineItems.length" :items="timelineItems" />
+        <P v-else>No posts yet.</P>
+      </div>
+    </div>
+  </div>
 </template>
-
-<style scoped>
-.f-blog-post-link {
-  display: block;
-  padding: 1rem 0;
-  text-decoration: none;
-  border-bottom: 1px solid var(--color-border, #e5e5e5);
-}
-
-.f-blog-post-link:hover {
-  opacity: 0.8;
-}
-
-.f-blog-post-link:last-child {
-  border-bottom: none;
-}
-</style>

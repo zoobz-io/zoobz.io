@@ -1,0 +1,21 @@
+.f-blogula-footer {
+  max-width: var(--ref-width-container);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--ref-spacing-md) var(--ref-spacing-lg);
+}
+
+.f-blogula-footer-socials {
+  display: flex;
+  align-items: center;
+  gap: var(--ref-spacing-xs);
+}
+
+.f-blogula-footer-copyright {
+  font-size: var(--ref-text-sm);
+  color: var(--sys-muted);
+}

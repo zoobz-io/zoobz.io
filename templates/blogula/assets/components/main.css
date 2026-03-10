@@ -1,0 +1,40 @@
+.f-main {
+  --f-nav-width: 16rem;
+  background: var(--sys-surface);
+  color: var(--sys-on-surface);
+  font-family: Hack, ui-monospace, monospace;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: var(--f-nav-width) 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Without a left nav, single column */
+.f-main:not(:has(> .f-nav)) {
+  grid-template-columns: 1fr;
+}
+
+/* Header spans full width */
+.f-main > .f-header {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+/* Left nav fills sidebar column */
+.f-main > .f-nav {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* Content overlaps both columns so it centers on the full viewport */
+.f-main > *:not(.f-header):not(.f-nav):not(.f-footer) {
+  grid-column: 1 / -1;
+  grid-row: 2;
+}
+
+/* Footer spans full width */
+.f-main > .f-footer {
+  grid-column: 1 / -1;
+  grid-row: 3;
+}

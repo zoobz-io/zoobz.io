@@ -1,0 +1,125 @@
+.f-command-root {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.f-command-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--ref-spacing-sm);
+  background: var(--sys-surface-container);
+  border-bottom-width: var(--ref-border-width-thin);
+  border-bottom-style: solid;
+  border-color: var(--sys-outline-variant);
+  padding-left: var(--ref-spacing-md);
+}
+
+.f-command-input {
+  background: transparent;
+  color: var(--sys-on-surface);
+  border-width: 0;
+  outline-width: 0;
+  padding-top: var(--ref-spacing-sm);
+  padding-right: var(--ref-spacing-md);
+  padding-bottom: var(--ref-spacing-sm);
+  padding-left: 0;
+  font-size: var(--ref-text-sm);
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.f-command-input-wrapper:focus-within {
+  box-shadow: var(--ref-shadow-focus-inset);
+}
+
+.f-command-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-height: 0;
+  overflow-y: auto;
+  background: var(--sys-surface);
+}
+
+.f-command-viewport {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.f-command-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-command-label {
+  color: var(--sys-on-surface-variant);
+  font-size: var(--ref-text-xs);
+  font-weight: var(--ref-font-bold);
+  padding-top: var(--ref-spacing-sm);
+  padding-right: var(--ref-spacing-md);
+  padding-bottom: var(--ref-spacing-xs);
+  padding-left: var(--ref-spacing-md);
+}
+
+.f-command-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--ref-spacing-md);
+  padding-top: var(--ref-spacing-sm);
+  padding-right: var(--ref-spacing-md);
+  padding-bottom: var(--ref-spacing-sm);
+  padding-left: var(--ref-spacing-md);
+  background: var(--ref-color-transparent);
+  cursor: pointer;
+  text-align: start;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.f-command-item:hover {
+  background: var(--sys-hover);
+}
+
+.f-command-item:focus-visible {
+  box-shadow: var(--ref-shadow-focus-inset);
+}
+
+.f-command-item[data-selected],
+.f-command-item[data-state='checked'],
+.f-command-item[data-highlighted] {
+  background: var(--sys-hover);
+}
+
+.f-command-item[data-disabled] {
+  color: var(--sys-muted);
+  cursor: default;
+}
+
+.f-command-item-description {
+  color: var(--sys-muted);
+  font-size: var(--ref-text-xs);
+  margin-left: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  min-width: 0;
+}
+
+.f-command-empty {
+  color: var(--sys-on-surface-variant);
+  font-size: var(--ref-text-sm);
+  text-align: center;
+  padding-top: var(--ref-spacing-md);
+  padding-bottom: var(--ref-spacing-md);
+}

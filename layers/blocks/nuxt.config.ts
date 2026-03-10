@@ -86,6 +86,10 @@ export default defineNuxtConfig({
       "chevron-first": "twotone-keyboard-double-arrow-left",
       "chevron-last": "twotone-keyboard-double-arrow-right",
 
+      // Social
+      rss: "twotone-rss-feed",
+      share: "twotone-share",
+
       // External
       community: "twotone-groups",
       "edit-document": "twotone-edit-note",
@@ -114,6 +118,10 @@ export default defineNuxtConfig({
       lock: "twotone-lock",
       shield: "twotone-shield",
       robot: "twotone-smart-toy",
+      rocket: "twotone-rocket",
+      star: "twotone-star",
+      celebration: "twotone-celebration",
+      launch: "twotone-launch",
       bolt: "twotone-bolt",
       speed: "twotone-speed",
       memory: "twotone-memory",
@@ -131,6 +139,8 @@ export default defineNuxtConfig({
       linkedin: "linkedin",
       youtube: "youtube",
       bluesky: "bluesky",
+      reddit: "reddit",
+      "hacker-news": "ycombinator",
       npm: "npm",
       docker: "docker",
       go: "go",

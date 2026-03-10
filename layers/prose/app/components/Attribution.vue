@@ -4,7 +4,10 @@ export interface AttributionProps {
   published?: string;
   updated?: string;
   readtime?: string;
-  editUrl?: string;}
+  editUrl?: string;
+  share?: boolean;
+  shareTitle?: string;
+}
 
 const props = defineProps<AttributionProps>();
 
@@ -29,8 +32,11 @@ const formattedDate = computed(() => {
     v-if="props.author || props.published || props.updated || props.readtime"
     class="f-attribution-root"
   >
-    <span
+    <a
       v-if="props.author"
+      :href="`https://github.com/${props.author}`"
+      target="_blank"
+      rel="noopener noreferrer"
       class="f-attribution-author"
     >
       <Avatar
@@ -42,7 +48,7 @@ const formattedDate = computed(() => {
         </template>
       </Avatar>
       {{ props.author }}
-    </span>
+    </a>
     <span
       v-if="props.published || props.updated"
       class="f-attribution-published"
@@ -67,6 +73,10 @@ const formattedDate = computed(() => {
       Edit this page
       <Icon alias="external" />
     </a>
+    <ShareMenu
+      v-if="props.share"
+      :title="props.shareTitle"
+    />
   </div>
 </template>
 

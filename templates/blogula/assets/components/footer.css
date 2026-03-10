@@ -1,0 +1,8 @@
+.f-footer {
+  background: var(--sys-surface-container);
+  color: var(--sys-on-surface);
+  border-top-style: solid;
+  border-top-width: var(--ref-border-width-thin);
+  border-color: var(--sys-outline);
+}
+

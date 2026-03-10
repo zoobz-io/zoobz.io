@@ -1,0 +1,87 @@
+/* Blog page layout */
+.f-blog-page {
+  --f-blog-stem-x: calc(var(--ref-spacing-lg) + 7rem + var(--ref-spacing-md) + 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Shared inner container for blog sections */
+.f-blog-section-inner {
+  max-width: var(--ref-width-container);
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: var(--ref-spacing-lg);
+  padding-right: var(--ref-spacing-lg);
+  position: relative;
+}
+
+/* Vertical stem line */
+.f-blog-lead::before,
+.f-blog-timeline-section > .f-blog-section-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--f-blog-stem-x);
+  width: 0;
+  border-left: var(--ref-border-width-thin) solid var(--sys-outline);
+}
+
+/* Lead section: vertical line spacer above hero */
+.f-blog-lead {
+  max-width: var(--ref-width-container);
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: var(--ref-spacing-lg);
+  padding-right: var(--ref-spacing-lg);
+  height: var(--ref-spacing-2xl);
+  position: relative;
+}
+
+/* Hero section: variant bg, full-width, bordered */
+.f-blog-hero-section {
+  background: var(--sys-surface-container);
+  border-top: var(--ref-border-width-thin) solid var(--sys-outline);
+  border-bottom: var(--ref-border-width-thin) solid var(--sys-outline);
+}
+
+/* Timeline section */
+.f-blog-timeline-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-blog-timeline-section > .f-blog-section-inner {
+  flex: 1;
+}
+
+/* Last timeline section fills remaining page height */
+.f-blog-page > .f-blog-timeline-section:last-child {
+  flex: 1;
+}
+
+/* Code blocks use default bg for contrast on variant-bg hero section */
+.f-blog-hero-section .f-pre {
+  background: var(--sys-surface);
+}
+
+/* Landing hero padding */
+.f-landing-hero {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+@media (max-width: 768px) {
+  .f-blog-page {
+    --f-blog-stem-x: calc(var(--ref-spacing-lg) + var(--ref-spacing-md) + 10px);
+  }
+
+  .f-landing-hero {
+    padding-top: var(--ref-spacing-xl);
+    padding-bottom: var(--ref-spacing-xl);
+  }
+}

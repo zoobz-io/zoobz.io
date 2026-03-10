@@ -1,0 +1,53 @@
+.f-share-trigger {
+  display: flex;
+  align-items: center;
+  gap: var(--ref-spacing-xs);
+  color: var(--sys-muted);
+  font-size: var(--ref-text-base);
+  font-weight: var(--ref-font-normal);
+  white-space: nowrap;
+  margin-left: auto;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.f-share-trigger:hover {
+  color: var(--sys-on-surface);
+  text-decoration: underline;
+}
+
+.f-share-trigger:focus-visible {
+  box-shadow: var(--ref-shadow-focus-ring);
+}
+
+.f-share-menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 10rem;
+}
+
+.f-share-menu-item {
+  display: flex;
+  align-items: center;
+  gap: var(--ref-spacing-sm);
+  padding: var(--ref-spacing-xs) var(--ref-spacing-md);
+  color: var(--sys-on-surface);
+  font-size: var(--ref-text-sm);
+  font-weight: var(--ref-font-normal);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.f-share-menu-item:hover {
+  background: var(--sys-hover);
+}
+
+.f-share-menu-item:focus-visible {
+  box-shadow: var(--ref-shadow-focus-inset);
+}

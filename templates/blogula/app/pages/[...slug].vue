@@ -8,25 +8,73 @@ const contentPath = computed(() => {
 });
 
 const { data: post } = await useAsyncData(`post-${contentPath.value}`, () =>
-  queryCollection("content").path(contentPath.value).first(),
+  queryCollection("posts").path(contentPath.value).first(),
 );
 
+if (!post.value) {
+  throw createError({ statusCode: 404, message: "Post not found" });
+}
+
 useHead({
-  title: post.value?.title ?? "Post",
+  title: post.value.title,
+});
+
+useSchemaOrg([
+  defineArticle({
+    headline: post.value.title,
+    description: post.value.description,
+    datePublished: post.value.published,
+    dateModified: post.value.updated ?? post.value.published,
+    author: post.value.author
+      ? { name: post.value.author, url: `https://github.com/${post.value.author}` }
+      : undefined,
+  }),
+]);
+
+useSeoMeta({
+  description: post.value.description,
+  ogTitle: post.value.title,
+  ogDescription: post.value.description,
+  ogType: "article",
+  articlePublishedTime: post.value.published,
+  articleModifiedTime: post.value.updated ?? post.value.published,
+  articleAuthor: post.value.author,
+  twitterCard: "summary",
+  twitterTitle: post.value.title,
+  twitterDescription: post.value.description,
 });
 </script>
 
 <template>
-  <Section v-if="post">
-    <Article>
-      <H1>{{ post.title }}</H1>
-      <ContentRenderer :value="post" />
-    </Article>
-  </Section>
-  <Section v-else>
-    <Article>
-      <H1>Not Found</H1>
-      <P>Post not found at {{ contentPath }}</P>
-    </Article>
-  </Section>
+  <Container>
+    <Section>
+      <Attribution
+        :author="post.author"
+        :published="post.published"
+        :updated="post.updated"
+        :readtime="post.readtime"
+        :share="true"
+        :share-title="post.title"
+      />
+      <Article>
+        <H1>{{ post.title }}</H1>
+        <ContentRenderer :value="post" />
+      </Article>
+      <Surround
+        collection="posts"
+        :path="contentPath"
+        :order="{ field: 'published', direction: 'DESC' }"
+        prev-label="Newer"
+        next-label="Older"
+      />
+    </Section>
+    <Nav>
+      <Aside>
+        <Toc
+          v-if="post.body?.toc?.links"
+          :links="post.body.toc.links"
+        />
+      </Aside>
+    </Nav>
+  </Container>
 </template>

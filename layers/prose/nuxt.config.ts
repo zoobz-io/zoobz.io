@@ -6,7 +6,13 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["types"],
   },
-  modules: ["@nuxt/content"],
+  modules: [
+    "@nuxt/content",
+    "@nuxtjs/sitemap",
+    "@nuxtjs/robots",
+    "nuxt-schema-org",
+    "nuxt-seo-utils",
+  ],
   content: {
     database: process.env.DATABASE_URL
       ? {

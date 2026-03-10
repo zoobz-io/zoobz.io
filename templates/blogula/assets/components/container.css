@@ -1,0 +1,30 @@
+.f-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  max-width: var(--ref-width-container);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Right sidebar (Nav inside Container) */
+.f-container > .f-nav {
+  align-self: stretch;
+  width: 16rem;
+}
+
+.f-container > .f-nav > .f-aside {
+  position: sticky;
+  top: var(--f-header-height);
+  max-height: calc(100vh - var(--f-header-height));
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .f-container {
+    grid-template-columns: 1fr;
+  }
+
+  .f-container > .f-nav {
+    display: none;
+  }
+}

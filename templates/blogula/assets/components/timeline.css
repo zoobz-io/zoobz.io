@@ -1,0 +1,157 @@
+.f-timeline {
+  --f-timeline-indicator: calc(var(--ref-text-xs) + 2 * var(--ref-spacing-2xs) + 2 * var(--ref-border-width-thin));
+  display: flex;
+  flex-direction: column;
+  gap: var(--ref-spacing-lg);
+  padding-top: var(--ref-spacing-lg);
+  padding-bottom: var(--ref-spacing-lg);
+  position: relative;
+}
+
+.f-timeline-entry {
+  display: grid;
+  grid-template-columns: 7rem calc(2 * var(--ref-spacing-md) + 20px) 1fr;
+  position: relative;
+}
+
+/* Date column */
+.f-timeline-date {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: var(--ref-spacing-md);
+}
+
+/* Stem column — horizontal row of left-arm, node, right-arm */
+.f-timeline-stem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: var(--ref-spacing-md);
+  position: relative;
+}
+
+/* Vertical line running full height of the stem, extending into the gap */
+.f-timeline-stem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: calc(-1 * var(--ref-spacing-lg));
+  left: 50%;
+  width: 0;
+  border-left: var(--ref-border-width-thin) solid var(--sys-outline);
+}
+
+/* Extend above the first entry to reach the neighbouring border */
+.f-timeline-entry:first-child .f-timeline-stem::before {
+  top: calc(-1 * var(--ref-spacing-lg));
+}
+
+/* Extend below the last entry to reach the neighbouring border */
+.f-timeline-entry:last-child .f-timeline-stem::before {
+  bottom: calc(-1 * var(--ref-spacing-lg));
+}
+
+/* Horizontal arms */
+.f-timeline-arm {
+  height: 0;
+  border-top: var(--ref-border-width-thin) solid var(--sys-outline);
+  flex: 1;
+  min-width: 0;
+  margin-top: calc(var(--ref-border-width-thin) + var(--ref-spacing-2xs) + 0.5 * var(--ref-text-xs));
+}
+
+/* Square node (posts) */
+.f-timeline-node {
+  width: 8px;
+  height: 8px;
+  background: var(--sys-outline);
+  margin-top: calc(var(--ref-border-width-thin) + var(--ref-spacing-2xs) + 0.5 * var(--ref-text-xs) - 4px);
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+/* Icon node (events) */
+.f-timeline-node-icon {
+  width: var(--f-timeline-indicator);
+  height: var(--f-timeline-indicator);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sys-primary);
+  color: var(--sys-on-primary);
+  border: var(--ref-border-width-thin) solid var(--sys-outline);
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.f-timeline-node-icon .f-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Card column — post cards */
+.f-timeline-card {
+  background: var(--sys-surface-container);
+  border: var(--ref-border-width-thin) solid var(--sys-outline);
+  padding: var(--ref-spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--ref-spacing-xs);
+  text-decoration: none;
+  color: var(--sys-on-surface);
+}
+
+.f-timeline-card:hover {
+  border-color: var(--sys-outline);
+  background: var(--sys-hover);
+}
+
+.f-timeline-card:active {
+  border-color: var(--sys-outline);
+}
+
+.f-timeline-card:focus-visible {
+  border-color: var(--sys-outline);
+  background: var(--ref-color-transparent);
+  box-shadow: var(--ref-shadow-focus-inset);
+}
+
+.f-timeline-card-title {
+  font-size: var(--ref-text-lg);
+  font-weight: var(--ref-font-semibold);
+  line-height: var(--ref-leading-snug);
+}
+
+.f-timeline-card-description {
+  color: var(--sys-on-surface-variant);
+  font-size: var(--ref-text-sm);
+  line-height: var(--ref-leading-normal);
+}
+
+.f-timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ref-spacing-2xs);
+  margin-top: var(--ref-spacing-2xs);
+}
+
+@media (max-width: 768px) {
+  .f-timeline-entry {
+    grid-template-columns: calc(2 * var(--ref-spacing-md) + 20px) 1fr;
+  }
+
+  .f-timeline-date {
+    display: none;
+  }
+
+  .f-timeline-node,
+  .f-timeline-node-icon {
+    display: none;
+  }
+
+  .f-timeline-arm-left {
+    display: none;
+  }
+}
+

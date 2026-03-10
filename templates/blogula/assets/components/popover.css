@@ -1,0 +1,119 @@
+.f-popover-content {
+  display: block;
+  position: relative;
+  background: var(--sys-surface);
+  color: var(--sys-on-surface);
+  border-top-width: var(--ref-border-width-thin);
+  border-right-width: var(--ref-border-width-thin);
+  border-bottom-width: var(--ref-border-width-thin);
+  border-left-width: var(--ref-border-width-thin);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-color: var(--sys-outline);
+  box-shadow: var(--ref-shadow-lg);
+  z-index: var(--ref-z-popover);
+}
+
+/* Border-colored triangle using two layered pseudo-elements:
+   ::before draws the outer triangle (border color),
+   ::after draws the inner triangle (background color) on top,
+   leaving a 1px border-colored edge visible. */
+
+.f-popover-content::before,
+.f-popover-content::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+}
+
+/* Bottom side (arrow points up) */
+.f-popover-content[data-side="bottom"]::before {
+  top: -6px;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 0 6px 6px 6px;
+  border-bottom-color: var(--sys-outline);
+}
+
+.f-popover-content[data-side="bottom"]::after {
+  top: -5px;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 0 6px 6px 6px;
+  border-bottom-color: var(--sys-surface);
+}
+
+/* Top side (arrow points down) */
+.f-popover-content[data-side="top"]::before {
+  bottom: -6px;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px 6px 0 6px;
+  border-top-color: var(--sys-outline);
+}
+
+.f-popover-content[data-side="top"]::after {
+  bottom: -5px;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px 6px 0 6px;
+  border-top-color: var(--sys-surface);
+}
+
+/* Bottom/Top align end (caret to the right) */
+.f-popover-content[data-side="bottom"][data-align="end"]::before,
+.f-popover-content[data-side="bottom"][data-align="end"]::after,
+.f-popover-content[data-side="top"][data-align="end"]::before,
+.f-popover-content[data-side="top"][data-align="end"]::after {
+  left: auto;
+  right: var(--ref-spacing-sm);
+  margin-left: 0;
+}
+
+/* Bottom/Top align start (caret to the left) */
+.f-popover-content[data-side="bottom"][data-align="start"]::before,
+.f-popover-content[data-side="bottom"][data-align="start"]::after,
+.f-popover-content[data-side="top"][data-align="start"]::before,
+.f-popover-content[data-side="top"][data-align="start"]::after {
+  left: var(--ref-spacing-sm);
+  margin-left: 0;
+}
+
+/* Left side (arrow points right) */
+.f-popover-content[data-side="left"]::before {
+  right: -6px;
+  top: 50%;
+  margin-top: -6px;
+  border-width: 6px 0 6px 6px;
+  border-left-color: var(--sys-outline);
+}
+
+.f-popover-content[data-side="left"]::after {
+  right: -5px;
+  top: 50%;
+  margin-top: -6px;
+  border-width: 6px 0 6px 6px;
+  border-left-color: var(--sys-surface);
+}
+
+/* Right side (arrow points left) */
+.f-popover-content[data-side="right"]::before {
+  left: -6px;
+  top: 50%;
+  margin-top: -6px;
+  border-width: 6px 6px 6px 0;
+  border-right-color: var(--sys-outline);
+}
+
+.f-popover-content[data-side="right"]::after {
+  left: -5px;
+  top: 50%;
+  margin-top: -6px;
+  border-width: 6px 6px 6px 0;
+  border-right-color: var(--sys-surface);
+}

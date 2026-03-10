@@ -1,0 +1,44 @@
+.f-error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: var(--ref-spacing-sm);
+  padding: var(--ref-spacing-lg);
+  background: var(--sys-surface);
+  color: var(--sys-on-surface);
+  font-family: Hack, ui-monospace, monospace;
+}
+
+.f-error-code {
+  font-size: 8rem;
+  font-weight: var(--ref-font-bold);
+  line-height: var(--ref-leading-none);
+  color: var(--sys-on-surface);
+}
+
+.f-error-message {
+  font-size: var(--ref-text-xl);
+  color: var(--sys-on-surface-variant);
+  text-align: center;
+}
+
+.f-error-action {
+  margin-top: var(--ref-spacing-lg);
+  padding: var(--ref-spacing-sm) var(--ref-spacing-xl);
+  background: none;
+  color: var(--sys-on-surface);
+  font-size: var(--ref-text-base);
+  font-weight: var(--ref-font-medium);
+  border: var(--ref-border-width-thin) solid var(--sys-outline);
+  cursor: pointer;
+}
+
+.f-error-action:hover {
+  background: var(--sys-hover);
+}
+
+.f-error-action:focus-visible {
+  box-shadow: var(--ref-shadow-focus-ring);
+}

@@ -1,0 +1,33 @@
+.f-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: var(--ref-spacing-md);
+}
+
+.f-topbar-center {
+  display: flex;
+  align-items: center;
+  min-width: 24rem;
+}
+
+.f-topbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--ref-spacing-xs);
+}
+
+@media (max-width: 768px) {
+  .f-topbar-center {
+    min-width: 0;
+  }
+
+  .f-topbar-center .f-search-trigger-text,
+  .f-topbar-center .f-search-trigger .f-kbd {
+    display: none;
+  }
+
+  .f-topbar-center .f-search-trigger {
+    width: auto;
+  }
+}
