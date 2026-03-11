@@ -69,10 +69,46 @@
   background: var(--sys-surface);
 }
 
-/* Landing hero padding */
+/* Landing hero layout */
 .f-landing-hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: var(--ref-spacing-2xl);
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+.f-blogula-hero-avatar {
+  width: 16rem;
+  height: 16rem;
+}
+
+.f-landing-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ref-spacing-sm);
+  margin-top: var(--ref-spacing-lg);
+}
+
+.f-landing-contacts .f-button {
+  display: flex;
+  align-items: center;
+  gap: var(--ref-spacing-xs);
+  background: var(--sys-surface);
+  border: var(--ref-border-width-thin) solid var(--sys-outline);
+  padding: var(--ref-spacing-xs) var(--ref-spacing-sm);
+  color: var(--sys-on-surface-variant);
+  font-size: var(--ref-text-base);
+  line-height: var(--ref-leading-none);
+}
+
+.f-landing-contacts .f-button:hover {
+  background: var(--sys-hover);
+}
+
+.f-landing-contacts .f-button:active {
+  background: var(--sys-surface);
 }
 
 @media (max-width: 768px) {
@@ -81,7 +117,15 @@
   }
 
   .f-landing-hero {
+    grid-template-columns: 1fr;
     padding-top: var(--ref-spacing-xl);
     padding-bottom: var(--ref-spacing-xl);
+  }
+
+  .f-blogula-hero-avatar {
+    width: 10rem;
+    height: 10rem;
+    justify-self: center;
+    order: -1;
   }
 }

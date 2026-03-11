@@ -26,7 +26,7 @@ body {
 }
 
 ::selection {
-  background: var(--sys-primary);
-  color: var(--sys-on-primary);
+  background: var(--sys-secondary);
+  color: var(--sys-on-secondary);
 }
 </style>

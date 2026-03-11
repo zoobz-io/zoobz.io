@@ -40,7 +40,7 @@ const formattedDate = computed(() => {
       class="f-attribution-author"
     >
       <Avatar
-        :src="`https://github.com/${props.author}.png`"
+        :src="`/avatars/${props.author}.png`"
         :alt="props.author"
       >
         <template #fallback>

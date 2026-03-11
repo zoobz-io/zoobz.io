@@ -1,5 +1,6 @@
 import { defineNuxtConfig } from "nuxt/config";
 import { defineIconic } from "@zoobz.io/iconic";
+import cyberdream from "@zoobz.io/untheme/themes/cyberdream";
 import oneDark from "@zoobz.io/untheme/themes/one-dark";
 import catppuccin from "@zoobz.io/untheme/themes/catppuccin";
 import tokyoNight from "@zoobz.io/untheme/themes/tokyo-night";
@@ -25,8 +26,9 @@ export default defineNuxtConfig({
     "reka-ui/nuxt",
   ],
   untheme: {
-    defaultTheme: "one-dark",
+    defaultTheme: "cyberdream",
     themes: {
+      cyberdream,
       "one-dark": oneDark,
       catppuccin,
       "tokyo-night": tokyoNight,

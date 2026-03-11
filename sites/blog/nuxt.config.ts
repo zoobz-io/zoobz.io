@@ -6,12 +6,12 @@ export default defineNuxtConfig({
   blogulaCss: { enabled: true },
   site: {
     url: "https://blog.zoobz.io",
-    name: "Zoobz Blog",
+    name: "zoobzio",
     description: "Thoughts and updates from zoobz.io",
   },
   app: {
     head: {
-      title: "Zoobz Blog",
+      title: "zoobzio",
       meta: [
         {
           name: "description",

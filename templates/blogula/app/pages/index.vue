@@ -7,6 +7,10 @@ const { data: landing } = await useAsyncData("landing", () =>
   queryCollection("landing").first(),
 );
 
+useHead({
+  title: landing.value?.title,
+});
+
 const { data: posts } = await useAsyncData("posts", () =>
   queryCollection("posts").order("published", "DESC").all(),
 );
@@ -43,9 +47,28 @@ const timelineItems = computed<TimelineItem[]>(() => {
 
     <div class="f-blog-hero-section">
       <div class="f-blog-section-inner">
-        <Article v-if="landing" class="f-landing-hero">
-          <ContentRenderer :value="landing" />
-        </Article>
+        <div class="f-landing-hero">
+          <Avatar
+            v-if="appConfig.github"
+            class="f-blogula-hero-avatar"
+            :src="`/avatars/${appConfig.github}.png`"
+            :alt="appConfig.github"
+            :fallback="appConfig.github.charAt(0).toUpperCase()"
+          />
+          <div>
+            <Article v-if="landing">
+              <ContentRenderer :value="landing" />
+            </Article>
+            <div v-if="appConfig.contacts?.length" class="f-landing-contacts">
+              <Button
+                v-for="contact in appConfig.contacts"
+                :key="contact.to"
+                :label="contact.label"
+                :link="contact"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

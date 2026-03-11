@@ -8,6 +8,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
   display: inline-flex;
+  background: var(--sys-secondary);
 }
 
 .f-avatar-image {
