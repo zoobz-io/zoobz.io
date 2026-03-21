@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/cereal"
+        code: `import "github.com/zoobz-io/cereal"
 
 type User struct {
     ID       string \`json:"id"\`
@@ -126,7 +126,7 @@ sent, _ := proc.Send(ctx, loaded)         // Email masked, SSN masked, Token red
       title: "Articles",
       description: "Browse the full cereal documentation.",
     },
-    repo: "https://github.com/zoobzio/cereal",
+    repo: "https://github.com/zoobz-io/cereal",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

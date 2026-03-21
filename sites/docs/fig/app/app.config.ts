@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/fig"
+        code: `import "github.com/zoobz-io/fig"
 
 type Config struct {
     // Resolution order: secret → env → default → zero value
@@ -126,7 +126,7 @@ fig.Load(&cfg, provider)`,
       title: "Articles",
       description: "Browse the full fig documentation.",
     },
-    repo: "https://github.com/zoobzio/fig",
+    repo: "https://github.com/zoobz-io/fig",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

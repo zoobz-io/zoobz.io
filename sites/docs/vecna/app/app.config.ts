@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/vecna"
+        code: `import "github.com/zoobz-io/vecna"
 
 type Metadata struct {
     Category string  \`json:"category"\`
@@ -129,7 +129,7 @@ filter, _ = builder.FromSpec(spec)`,
       title: "Articles",
       description: "Browse the full vecna documentation.",
     },
-    repo: "https://github.com/zoobzio/vecna",
+    repo: "https://github.com/zoobz-io/vecna",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

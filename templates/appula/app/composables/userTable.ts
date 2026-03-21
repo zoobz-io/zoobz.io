@@ -1,4 +1,4 @@
-import type { TableStore, SelectableStore, FacetableStore, DateFilterableStore } from "@zoobz.io/blocks/types/common";
+import type { TableStore, SelectableStore, FacetableStore, DateFilterableStore } from "@zoobz-io/blocks/types/common";
 
 interface User {
   id: number;

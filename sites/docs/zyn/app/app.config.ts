@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/zyn"
+        code: `import "github.com/zoobz-io/zyn"
 
 type Contact struct {
     Name  string \`json:"name"\`
@@ -133,7 +133,7 @@ dept, _ := category.Fire(ctx, session, "I need help with the API integration")
       title: "Articles",
       description: "Browse the full zyn documentation.",
     },
-    repo: "https://github.com/zoobzio/zyn",
+    repo: "https://github.com/zoobz-io/zyn",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

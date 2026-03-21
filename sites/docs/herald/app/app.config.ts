@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/herald"
+        code: `import "github.com/zoobz-io/herald"
 
 // Publish internal events to a broker
 publisher := herald.NewPublisher[Order](cap, provider,
@@ -120,7 +120,7 @@ subscriber.Start(ctx) // Messages flow in as events
       title: "Articles",
       description: "Browse the full herald documentation.",
     },
-    repo: "https://github.com/zoobzio/herald",
+    repo: "https://github.com/zoobz-io/herald",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

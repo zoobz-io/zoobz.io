@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/sum"
+        code: `import "github.com/zoobz-io/sum"
 
 // Initialize registry
 k := sum.Start()
@@ -128,7 +128,7 @@ service.Run(ctx) // Blocks until SIGINT/SIGTERM`,
       title: "Articles",
       description: "Browse the full sum documentation.",
     },
-    repo: "https://github.com/zoobzio/sum",
+    repo: "https://github.com/zoobz-io/sum",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

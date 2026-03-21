@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/tendo"
+        code: `import "github.com/zoobz-io/tendo"
 
 // Load pretrained weights
 weights, _ := tendo.LoadSafetensors("model.safetensors")
@@ -124,7 +124,7 @@ gpuInput := input.To(tendo.CUDA(0))`,
       title: "Articles",
       description: "Browse the full tendo documentation.",
     },
-    repo: "https://github.com/zoobzio/tendo",
+    repo: "https://github.com/zoobz-io/tendo",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

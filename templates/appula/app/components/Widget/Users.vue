@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { DateFilter } from "@zoobz.io/blocks/types/common";
+import type { DateFilter } from "@zoobz-io/blocks/types/common";
 
 interface User {
   id: number;

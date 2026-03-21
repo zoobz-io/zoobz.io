@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/flume"
+        code: `import "github.com/zoobz-io/flume"
 
 // 1. Register components once
 factory := flume.New[Order]()
@@ -138,7 +138,7 @@ factory.SetSchema("order-pipeline", newSchema)`,
       title: "Articles",
       description: "Browse the full flume documentation.",
     },
-    repo: "https://github.com/zoobzio/flume",
+    repo: "https://github.com/zoobz-io/flume",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

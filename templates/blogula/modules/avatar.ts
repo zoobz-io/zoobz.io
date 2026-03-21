@@ -52,7 +52,7 @@ async function findAuthors(contentDirs: string[]): Promise<Set<string>> {
 
 export default defineNuxtModule({
   meta: {
-    name: "@zoobz.io/blogula-avatar",
+    name: "@zoobz-io/blogula-avatar",
     configKey: "blogulaAvatar",
   },
   defaults: {

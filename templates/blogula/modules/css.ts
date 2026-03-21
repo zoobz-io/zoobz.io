@@ -4,7 +4,7 @@ const { resolve } = createResolver(import.meta.url);
 
 export default defineNuxtModule({
   meta: {
-    name: "@zoobz.io/blogula-css",
+    name: "@zoobz-io/blogula-css",
     configKey: "blogulaCss",
   },
   defaults: {

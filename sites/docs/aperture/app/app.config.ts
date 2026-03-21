@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/aperture"
+        code: `import "github.com/zoobz-io/aperture"
 
 // Create aperture with OTEL providers
 ap, _ := aperture.New(cap, logProvider, meterProvider, traceProvider)
@@ -126,7 +126,7 @@ tracer := ap.Tracer("checkout")`,
       title: "Articles",
       description: "Browse the full aperture documentation.",
     },
-    repo: "https://github.com/zoobzio/aperture",
+    repo: "https://github.com/zoobz-io/aperture",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

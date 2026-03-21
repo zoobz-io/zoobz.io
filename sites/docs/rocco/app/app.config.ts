@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/rocco"
+        code: `import "github.com/zoobz-io/rocco"
 
 type CreateOrderInput struct {
     CustomerID string  \`json:"customer_id" description:"Customer UUID"\`
@@ -134,7 +134,7 @@ engine.Run(":8080")`,
       title: "Articles",
       description: "Browse the full rocco documentation.",
     },
-    repo: "https://github.com/zoobzio/rocco",
+    repo: "https://github.com/zoobz-io/rocco",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

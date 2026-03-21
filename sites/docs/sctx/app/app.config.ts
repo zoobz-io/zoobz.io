@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/sctx"
+        code: `import "github.com/zoobz-io/sctx"
 
 type UserMeta struct {
     Role     string
@@ -132,7 +132,7 @@ admin.RevokeByFingerprint(ctx, sctx.GetFingerprint(cert))`,
       title: "Articles",
       description: "Browse the full sctx documentation.",
     },
-    repo: "https://github.com/zoobzio/sctx",
+    repo: "https://github.com/zoobz-io/sctx",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

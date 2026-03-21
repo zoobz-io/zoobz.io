@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/grub"
+        code: `import "github.com/zoobz-io/grub"
 
 // Same code, different backends
 sessions := grub.NewStore[Session](redis.New(client))
@@ -124,7 +124,7 @@ if errors.Is(err, grub.ErrNotFound) {
       title: "Articles",
       description: "Browse the full grub documentation.",
     },
-    repo: "https://github.com/zoobzio/grub",
+    repo: "https://github.com/zoobz-io/grub",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

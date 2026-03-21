@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/cogito"
+        code: `import "github.com/zoobz-io/cogito"
 
 // Create a reasoning thought
 thought := cogito.NewThought(ctx, provider, "Analyze support ticket")
@@ -128,7 +128,7 @@ for _, note := range result.Notes() {
       title: "Articles",
       description: "Browse the full cogito documentation.",
     },
-    repo: "https://github.com/zoobzio/cogito",
+    repo: "https://github.com/zoobz-io/cogito",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

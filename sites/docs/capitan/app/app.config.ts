@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/capitan"
+        code: `import "github.com/zoobz-io/capitan"
 
 // Define typed keys
 orderID := capitan.NewStringKey("order_id")
@@ -129,7 +129,7 @@ capitan.Observe(func(ctx context.Context, e *capitan.Event) {
       title: "Articles",
       description: "Browse the full capitan documentation.",
     },
-    repo: "https://github.com/zoobzio/capitan",
+    repo: "https://github.com/zoobz-io/capitan",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

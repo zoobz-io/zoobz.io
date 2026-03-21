@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/pipz"
+        code: `import "github.com/zoobz-io/pipz"
 
 // Small, focused processors
 validate := pipz.Apply(validateID, func(_ context.Context, o Order) (Order, error) {
@@ -135,7 +135,7 @@ if err != nil {
       title: "Articles",
       description: "Browse the full pipz documentation.",
     },
-    repo: "https://github.com/zoobzio/pipz",
+    repo: "https://github.com/zoobz-io/pipz",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

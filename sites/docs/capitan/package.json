@@ -1,5 +1,5 @@
 {
-  "name": "@zoobz/docs-capitan",
+  "name": "@zoobz-io/capitan",
   "type": "module",
   "private": true,
   "version": "0.0.1",
@@ -12,12 +12,12 @@
     "typecheck": "nuxi typecheck"
   },
   "dependencies": {
-    "@zoobz.io/blocks": "workspace:*",
-    "@zoobz.io/docula": "workspace:*",
-    "@zoobz.io/github": "workspace:*",
-    "@zoobz.io/iconic": "workspace:*",
-    "@zoobz.io/prose": "workspace:*",
-    "@zoobz.io/untheme": "workspace:*",
+    "@zoobz-io/blocks": "workspace:*",
+    "@zoobz-io/docula": "workspace:*",
+    "@zoobz-io/github": "workspace:*",
+    "@zoobz-io/iconic": "workspace:*",
+    "@zoobz-io/prose": "workspace:*",
+    "@zoobz-io/untheme": "workspace:*",
     "@nuxt/content": "catalog:",
     "@nuxt/fonts": "^0.12.1"
   },

@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/chisel"
+        code: `import "github.com/zoobz-io/chisel"
 
 // Register language providers
 chunker := chisel.New(
@@ -132,7 +132,7 @@ for _, chunk := range chunks {
       title: "Articles",
       description: "Browse the full chisel documentation.",
     },
-    repo: "https://github.com/zoobzio/chisel",
+    repo: "https://github.com/zoobz-io/chisel",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

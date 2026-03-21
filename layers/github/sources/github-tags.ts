@@ -36,7 +36,7 @@ export interface VersionManifest {
  *
  * @example
  * ```ts
- * import { defineGitHubTagSource } from "@zoobz.io/github/sources/github-tags";
+ * import { defineGitHubTagSource } from "@zoobz-io/github/sources/github-tags";
  *
  * export default defineContentConfig({
  *   collections: {

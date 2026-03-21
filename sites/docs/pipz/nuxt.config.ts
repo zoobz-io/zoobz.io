@@ -2,10 +2,11 @@ import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-11-17",
-  extends: ["@zoobz.io/docula"],
+  extends: ["@zoobz-io/docula"],
   modules: ["nuxt-typed-router"],
+  site: { url: "https://pipz.zoobz.io" },
   doculaCss: { enabled: true },
-  github: { repo: "zoobzio/pipz" },
+  github: { repo: "zoobz-io/pipz" },
   app: {
     head: {
       title: "Zoobz Docs",

@@ -72,7 +72,7 @@ function injectFrontmatter(markdown: string, meta: Record<string, string>): stri
  *
  * @example
  * ```ts
- * import { defineGitHubResourceSource } from "@zoobz.io/github/sources/github-resources";
+ * import { defineGitHubResourceSource } from "@zoobz-io/github/sources/github-resources";
  *
  * export default defineContentConfig({
  *   collections: {

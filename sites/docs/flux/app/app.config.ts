@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/flux"
+        code: `import "github.com/zoobz-io/flux"
 
 type Config struct {
     Port int    \`json:"port"\`
@@ -132,7 +132,7 @@ cfg, _ := capacitor.Current() // Always the last valid config
       title: "Articles",
       description: "Browse the full flux documentation.",
     },
-    repo: "https://github.com/zoobzio/flux",
+    repo: "https://github.com/zoobz-io/flux",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/streamz"
+        code: `import "github.com/zoobz-io/streamz"
 
 // Create input stream
 orders := make(chan streamz.Result[Order], 10)
@@ -138,7 +138,7 @@ for batch := range batched {
       title: "Articles",
       description: "Browse the full streamz documentation.",
     },
-    repo: "https://github.com/zoobzio/streamz",
+    repo: "https://github.com/zoobz-io/streamz",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/clockz"
+        code: `import "github.com/zoobz-io/clockz"
 
 func TestRetryBackoff(t *testing.T) {
     clock := clockz.NewFakeClockAt(time.Date(2024, 1, 1, 12, 0, 0, 0, time.UTC))
@@ -127,7 +127,7 @@ clock.Advance(6 * time.Second) // Context cancelled instantly`,
       title: "Articles",
       description: "Browse the full clockz documentation.",
     },
-    repo: "https://github.com/zoobzio/clockz",
+    repo: "https://github.com/zoobz-io/clockz",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

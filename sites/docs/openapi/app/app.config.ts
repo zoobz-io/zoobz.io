@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/openapi"
+        code: `import "github.com/zoobz-io/openapi"
 
 spec := &openapi.OpenAPI{
     OpenAPI: "3.1.0",
@@ -141,6 +141,6 @@ yamlBytes, _ := spec.ToYAML()`,
       title: "Articles",
       description: "Browse the full openapi documentation.",
     },
-    repo: "https://github.com/zoobzio/openapi",
+    repo: "https://github.com/zoobz-io/openapi",
   },
 });

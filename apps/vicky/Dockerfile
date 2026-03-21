@@ -10,7 +10,7 @@ COPY foundation/layers/blocks/package.json ./foundation/layers/blocks/
 COPY foundation/packages/iconic/package.json ./foundation/packages/iconic/
 COPY foundation/packages/untheme/package.json ./foundation/packages/untheme/
 WORKDIR /app/zoobz.io
-RUN pnpm install --frozen-lockfile --filter @zoobz/vicky...
+RUN pnpm install --frozen-lockfile --filter @zoobz-io/vicky...
 
 FROM base AS build
 WORKDIR /app

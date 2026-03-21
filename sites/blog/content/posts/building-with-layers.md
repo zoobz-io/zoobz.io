@@ -20,7 +20,7 @@ A Nuxt layer is a self-contained unit that can provide components, composables, 
 
 ```typescript
 export default defineNuxtConfig({
-  extends: ["@zoobz.io/prose"],
+  extends: ["@zoobz-io/prose"],
 });
 ```
 

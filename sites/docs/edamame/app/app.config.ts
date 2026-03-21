@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/edamame"
+        code: `import "github.com/zoobz-io/edamame"
 
 // Define statements once at package level
 var (
@@ -133,7 +133,7 @@ user, _ := exec.ExecSelect(ctx, SelectByID, map[string]any{"id": 123})`,
       title: "Articles",
       description: "Browse the full edamame documentation.",
     },
-    repo: "https://github.com/zoobzio/edamame",
+    repo: "https://github.com/zoobz-io/edamame",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

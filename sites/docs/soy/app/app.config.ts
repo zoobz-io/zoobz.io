@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/soy"
+        code: `import "github.com/zoobz-io/soy"
 
 type User struct {
     ID    int64  \`db:"id"    type:"bigserial primary key"\`
@@ -133,7 +133,7 @@ updated, _ := users.Modify().
       title: "Articles",
       description: "Browse the full soy documentation.",
     },
-    repo: "https://github.com/zoobzio/soy",
+    repo: "https://github.com/zoobz-io/soy",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

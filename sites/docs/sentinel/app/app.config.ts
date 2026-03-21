@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/sentinel"
+        code: `import "github.com/zoobz-io/sentinel"
 
 type User struct {
     ID      string   \`json:"id" db:"id" validate:"required"\`
@@ -130,7 +130,7 @@ sentinel.Browse()
       title: "Articles",
       description: "Browse the full sentinel documentation.",
     },
-    repo: "https://github.com/zoobzio/sentinel",
+    repo: "https://github.com/zoobz-io/sentinel",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

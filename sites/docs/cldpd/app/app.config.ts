@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/cldpd"
+        code: `import "github.com/zoobz-io/cldpd"
 
 // Create dispatcher from pod definitions
 d := cldpd.NewDispatcher(podsDir, &cldpd.DockerRunner{})
@@ -130,7 +130,7 @@ code, _ := session.Wait()`,
       title: "Articles",
       description: "Browse the full cldpd documentation.",
     },
-    repo: "https://github.com/zoobzio/cldpd",
+    repo: "https://github.com/zoobz-io/cldpd",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

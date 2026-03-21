@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/atom"
+        code: `import "github.com/zoobz-io/atom"
 
 type User struct {
     ID      string
@@ -132,7 +132,7 @@ restored, _ := atomizer.Deatomize(a)`,
       title: "Articles",
       description: "Browse the full atom documentation.",
     },
-    repo: "https://github.com/zoobzio/atom",
+    repo: "https://github.com/zoobz-io/atom",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

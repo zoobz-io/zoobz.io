@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/chit"
+        code: `import "github.com/zoobz-io/chit"
 
 // Your reasoning logic — any LLM, any strategy
 processor := chit.ProcessorFunc(func(
@@ -135,7 +135,7 @@ processor = chit.ProcessorFunc(func(ctx context.Context, input string, session *
       title: "Articles",
       description: "Browse the full chit documentation.",
     },
-    repo: "https://github.com/zoobzio/chit",
+    repo: "https://github.com/zoobz-io/chit",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

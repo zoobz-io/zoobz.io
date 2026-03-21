@@ -1,5 +1,5 @@
 {
-  "name": "@zoobz.io/blocks",
+  "name": "@zoobz-io/blocks",
   "type": "module",
   "license": "MIT",
   "version": "0.0.1",
@@ -23,8 +23,8 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@zoobz.io/iconic": "workspace:*",
-    "@zoobz.io/untheme": "workspace:*",
+    "@zoobz-io/iconic": "workspace:*",
+    "@zoobz-io/untheme": "workspace:*",
     "@internationalized/date": "^3.7.0",
     "@pinia/nuxt": "catalog:",
     "@vueuse/nuxt": "^14.1.0",

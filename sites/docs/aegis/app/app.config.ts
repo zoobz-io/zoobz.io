@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/aegis"
+        code: `import "github.com/zoobz-io/aegis"
 
 // Create a node with services
 node, _ := aegis.NewNode(
@@ -127,7 +127,7 @@ fmt.Println(caller.NodeID, caller.Services)`,
       title: "Articles",
       description: "Browse the full aegis documentation.",
     },
-    repo: "https://github.com/zoobzio/aegis",
+    repo: "https://github.com/zoobz-io/aegis",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

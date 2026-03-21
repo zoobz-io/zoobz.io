@@ -1,13 +1,13 @@
 import { defineCollection, defineContentConfig, z } from "@nuxt/content";
-import { defineGitHubTagSource } from "@zoobz.io/github/sources/github-tags";
-import { defineGitHubResourceSource } from "@zoobz.io/github/sources/github-resources";
+import { defineGitHubTagSource } from "@zoobz-io/github/sources/github-tags";
+import { defineGitHubResourceSource } from "@zoobz-io/github/sources/github-resources";
 
 export default defineContentConfig({
   collections: {
     atom: defineCollection({
       type: "page",
       source: defineGitHubTagSource({
-        repository: "zoobzio/atom",
+        repository: "zoobz-io/atom",
         docsPath: "docs",
       }),
       schema: z.object({
@@ -21,7 +21,7 @@ export default defineContentConfig({
     resources: defineCollection({
       type: "page",
       source: defineGitHubResourceSource({
-        repository: "zoobzio/atom",
+        repository: "zoobz-io/atom",
       }),
       schema: z.object({
         icon: z.string().optional(),

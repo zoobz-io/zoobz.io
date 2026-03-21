@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/scio"
+        code: `import "github.com/zoobz-io/scio"
 
 s := scio.New()
 
@@ -125,7 +125,7 @@ s.Related("db://users")       // other resources holding User data`,
       title: "Articles",
       description: "Browse the full scio documentation.",
     },
-    repo: "https://github.com/zoobzio/scio",
+    repo: "https://github.com/zoobz-io/scio",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

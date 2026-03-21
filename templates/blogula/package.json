@@ -1,5 +1,5 @@
 {
-  "name": "@zoobz.io/blogula",
+  "name": "@zoobz-io/blogula",
   "type": "module",
   "private": true,
   "version": "0.0.1",
@@ -16,7 +16,7 @@
     "typecheck": "nuxi typecheck"
   },
   "dependencies": {
-    "@zoobz.io/prose": "workspace:*",
+    "@zoobz-io/prose": "workspace:*",
     "@nuxt/fonts": "^0.12.1",
     "minisearch": "^7.2.0"
   },

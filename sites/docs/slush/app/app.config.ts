@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/slush"
+        code: `import "github.com/zoobz-io/slush"
 
 // Initialize and register services
 k := slush.Start()
@@ -132,7 +132,7 @@ for _, info := range slush.Services(k) {
       title: "Articles",
       description: "Browse the full slush documentation.",
     },
-    repo: "https://github.com/zoobzio/slush",
+    repo: "https://github.com/zoobz-io/slush",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

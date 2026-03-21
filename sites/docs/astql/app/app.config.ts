@@ -11,7 +11,7 @@ export default defineAppConfig({
       action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
-        code: `import "github.com/zoobzio/astql"
+        code: `import "github.com/zoobz-io/astql"
 
 // Schema from DBML — single source of truth
 instance, _ := astql.NewFromDBML(project)
@@ -124,7 +124,7 @@ ms   := query.Render(mssql.New())     // [email], FETCH NEXT 10
       title: "Articles",
       description: "Browse the full astql documentation.",
     },
-    repo: "https://github.com/zoobzio/astql",
+    repo: "https://github.com/zoobz-io/astql",
     navIcons: {
       Learn: "learn",
       Guides: "guides",

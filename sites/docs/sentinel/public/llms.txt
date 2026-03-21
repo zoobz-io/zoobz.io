@@ -21,4 +21,4 @@ Sentinel extracts struct metadata, caches it permanently, and discovers relation
 
 ## Source
 
-- [GitHub](https://github.com/zoobzio/sentinel)
+- [GitHub](https://github.com/zoobz-io/sentinel)

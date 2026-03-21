@@ -47,13 +47,13 @@ importers:
 
   apps/vicky:
     dependencies:
-      '@zoobz.io/appula':
+      '@zoobz-io/appula':
         specifier: workspace:*
         version: link:../../templates/appula
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../layers/blocks
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../packages/iconic
       openapi-fetch:
@@ -84,10 +84,10 @@ importers:
       '@vueuse/nuxt':
         specifier: ^14.1.0
         version: 14.2.0(magicast@0.5.2)(nuxt@4.3.1(@parcel/watcher@2.5.6)(@types/node@25.2.2)(@vue/compiler-sfc@3.5.28)(better-sqlite3@12.6.2)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.6.2))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.9.2)(lightningcss@1.31.1)(magicast@0.5.2)(optionator@0.9.4)(rollup@4.57.1)(terser@5.46.0)(typescript@5.9.3)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(yaml@2.8.2))(vue@3.5.28(typescript@5.9.3))
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../packages/iconic
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../packages/untheme
       defu:
@@ -151,10 +151,10 @@ importers:
       '@nuxtjs/sitemap':
         specifier: ^7.6.0
         version: 7.6.0(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(vue@3.5.28(typescript@5.9.3))(zod@3.25.76)
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../blocks
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../packages/untheme
       better-sqlite3:
@@ -238,10 +238,10 @@ importers:
       '@nuxt/content':
         specifier: 'catalog:'
         version: 3.11.2(better-sqlite3@12.6.2)(magicast@0.5.2)
-      '@zoobz.io/blogula':
+      '@zoobz-io/blogula':
         specifier: workspace:*
         version: link:../../templates/blogula
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../layers/prose
     devDependencies:
@@ -260,22 +260,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -303,22 +303,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -346,22 +346,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -389,22 +389,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -432,22 +432,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -475,22 +475,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -518,22 +518,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -561,22 +561,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -604,22 +604,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -647,22 +647,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -690,22 +690,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -733,22 +733,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -776,22 +776,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -819,22 +819,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -862,22 +862,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -905,22 +905,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -948,22 +948,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -991,22 +991,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1034,22 +1034,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1077,22 +1077,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1120,22 +1120,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1163,22 +1163,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1206,22 +1206,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1249,22 +1249,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1292,22 +1292,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1335,22 +1335,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1378,22 +1378,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1421,22 +1421,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1464,22 +1464,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1507,22 +1507,22 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../../layers/blocks
-      '@zoobz.io/docula':
+      '@zoobz-io/docula':
         specifier: workspace:*
         version: link:../../../templates/docula
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../../packages/untheme
     devDependencies:
@@ -1547,10 +1547,10 @@ importers:
       '@pinia/nuxt':
         specifier: 'catalog:'
         version: 0.11.3(magicast@0.5.2)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.28(typescript@5.9.3)))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../layers/blocks
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../packages/iconic
       pinia:
@@ -1569,7 +1569,7 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../layers/prose
       minisearch:
@@ -1591,19 +1591,19 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
-      '@zoobz.io/blocks':
+      '@zoobz-io/blocks':
         specifier: workspace:*
         version: link:../../layers/blocks
-      '@zoobz.io/github':
+      '@zoobz-io/github':
         specifier: workspace:*
         version: link:../../layers/github
-      '@zoobz.io/iconic':
+      '@zoobz-io/iconic':
         specifier: workspace:*
         version: link:../../packages/iconic
-      '@zoobz.io/prose':
+      '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../layers/prose
-      '@zoobz.io/untheme':
+      '@zoobz-io/untheme':
         specifier: workspace:*
         version: link:../../packages/untheme
       minisearch:

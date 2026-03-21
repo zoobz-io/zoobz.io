@@ -1,14 +1,14 @@
 import { defineNuxtConfig } from "nuxt/config";
-import { defineIconic } from "@zoobz.io/iconic";
-import cyberdream from "@zoobz.io/untheme/themes/cyberdream";
-import oneDark from "@zoobz.io/untheme/themes/one-dark";
-import catppuccin from "@zoobz.io/untheme/themes/catppuccin";
-import tokyoNight from "@zoobz.io/untheme/themes/tokyo-night";
-import nord from "@zoobz.io/untheme/themes/nord";
-import dracula from "@zoobz.io/untheme/themes/dracula";
-import solarized from "@zoobz.io/untheme/themes/solarized";
-import rosePine from "@zoobz.io/untheme/themes/rose-pine";
-import gruvbox from "@zoobz.io/untheme/themes/gruvbox";
+import { defineIconic } from "@zoobz-io/iconic";
+import cyberdream from "@zoobz-io/untheme/themes/cyberdream";
+import oneDark from "@zoobz-io/untheme/themes/one-dark";
+import catppuccin from "@zoobz-io/untheme/themes/catppuccin";
+import tokyoNight from "@zoobz-io/untheme/themes/tokyo-night";
+import nord from "@zoobz-io/untheme/themes/nord";
+import dracula from "@zoobz-io/untheme/themes/dracula";
+import solarized from "@zoobz-io/untheme/themes/solarized";
+import rosePine from "@zoobz-io/untheme/themes/rose-pine";
+import gruvbox from "@zoobz-io/untheme/themes/gruvbox";
 
 import icIcons from "@iconify-json/ic/icons.json";
 import siIcons from "@iconify-json/simple-icons/icons.json";
@@ -19,8 +19,8 @@ export default defineNuxtConfig({
     dirs: ["types"],
   },
   modules: [
-    "@zoobz.io/iconic/module",
-    "@zoobz.io/untheme/module",
+    "@zoobz-io/iconic/module",
+    "@zoobz-io/untheme/module",
     "@pinia/nuxt",
     "@vueuse/nuxt",
     "reka-ui/nuxt",
