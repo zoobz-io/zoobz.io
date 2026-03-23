@@ -203,15 +203,17 @@ export default defineNuxtModule<GitHubModuleOptions>({
   async setup(options, nuxt) {
     const cacheDir = join(nuxt.options.rootDir, options.cacheDir!);
 
-    // Versions
-    const versionManifest = resolveVersions(cacheDir);
-    if (versionManifest) {
-      nuxt.options.appConfig.version = {
-        versions: versionManifest.versions,
-        latest: versionManifest.latest,
-        current: "",
-      };
-    }
+    // Read version manifest after content sources have written it, but before appConfig is serialized
+    nuxt.hook("app:templates", () => {
+      const versionManifest = resolveVersions(cacheDir);
+      if (versionManifest) {
+        nuxt.options.appConfig.version = {
+          versions: versionManifest.versions,
+          latest: versionManifest.latest,
+          current: "",
+        };
+      }
+    });
 
     // Stats
     let statsData: StatItem[] = [];
