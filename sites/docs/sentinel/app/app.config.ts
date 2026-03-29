@@ -8,7 +8,11 @@ export default defineAppConfig({
       taglineHighlight: "Zero Dependencies.",
       description:
         "Extract struct metadata once, cache it permanently, and discover relationships between types.",
-      action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
+      action: {
+        label: "Getting Started",
+        to: "/learn/quickstart",
+        icon: "bolt",
+      },
       example: {
         lang: "go",
         code: `import "github.com/zoobz-io/sentinel"
