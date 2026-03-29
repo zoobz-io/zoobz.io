@@ -8,7 +8,7 @@ export default defineAppConfig({
       taglineHighlight: "Synapses. Sessions. Structure.",
       description:
         "Interact with LLMs through typed synapses that return validated Go structs, not raw strings. Sessions maintain conversation context across calls, and pipz integration provides retry, timeout, and circuit breaking out of the box.",
-      action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
+      action: { label: "Getting Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
         code: `import "github.com/zoobz-io/zyn"

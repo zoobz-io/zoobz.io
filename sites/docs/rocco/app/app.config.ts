@@ -8,7 +8,7 @@ export default defineAppConfig({
       taglineHighlight: "Define Types. Derive Everything.",
       description:
         "Build APIs where struct types are the single source of truth. Validation, OpenAPI 3.1.0 specs, error contracts, and interactive docs all generated automatically from your Go types — on a stdlib foundation.",
-      action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
+      action: { label: "Getting Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
         code: `import "github.com/zoobz-io/rocco"

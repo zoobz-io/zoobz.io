@@ -8,7 +8,7 @@ export default defineAppConfig({
       taglineHighlight: "One Interface. Infinite Composition.",
       description:
         "Build complex data processing from small, reusable parts. Every processor and connector implements Chainable[T] — compose retry, circuit breaking, and routing without changing your logic.",
-      action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
+      action: { label: "Getting Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
         code: `import "github.com/zoobz-io/pipz"
