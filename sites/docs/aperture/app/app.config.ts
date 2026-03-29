@@ -8,7 +8,7 @@ export default defineAppConfig({
       taglineHighlight: "Events In, Telemetry Out.",
       description:
         "Bridge capitan events to OpenTelemetry logs, metrics, and traces with declarative YAML configuration. Change what you observe without recompiling.",
-      action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
+      action: { label: "Getting Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
         code: `import "github.com/zoobz-io/aperture"
