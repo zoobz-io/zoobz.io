@@ -8,7 +8,7 @@ export default defineAppConfig({
       taglineHighlight: "Zero Dependencies.",
       description:
         "Type-safe signals, async workers with backpressure, and decoupled event flows across your entire application.",
-      action: { label: "Getting Started", to: "/learn/quickstart", icon: "bolt" },
+      action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
         code: `import "github.com/zoobz-io/capitan"

@@ -8,7 +8,7 @@ export default defineAppConfig({
       taglineHighlight: "Internal Events Meet External Messages.",
       description:
         "Connect capitan events to distributed message brokers. Publish internal events to Kafka, NATS, or SQS — subscribe from brokers and emit as capitan events. Same types, same signals, both directions.",
-      action: { label: "Getting Started", to: "/learn/quickstart", icon: "bolt" },
+      action: { label: "Get Started", to: "/learn/quickstart", icon: "bolt" },
       example: {
         lang: "go",
         code: `import "github.com/zoobz-io/herald"
