@@ -1,0 +1,42 @@
+.f-input-root {
+  display: flex;
+  align-items: center;
+  gap: var(--ref-spacing-xs);
+  font-size: var(--ref-text-sm);
+  background: var(--sys-surface);
+  padding: var(--ref-spacing-xs) var(--ref-spacing-sm);
+  border: var(--ref-border-width-thin) solid var(--sys-outline);
+  width: 100%;
+}
+
+.f-input-root:hover {
+  background: var(--sys-hover);
+}
+
+.f-input-root:focus-within {
+  box-shadow: var(--ref-shadow-focus-inset);
+}
+
+.f-input-prepend {
+  display: flex;
+  align-items: center;
+  color: var(--sys-on-surface-variant);
+}
+
+.f-input-input {
+  background: var(--ref-color-transparent);
+  color: var(--sys-on-surface);
+  font-size: var(--ref-text-sm);
+  line-height: 1;
+  height: 1em;
+  flex-grow: 1;
+  min-width: var(--ref-spacing-none);
+  border: none;
+  outline: none;
+}
+
+.f-input-append {
+  display: flex;
+  align-items: center;
+  color: var(--sys-on-surface-variant);
+}

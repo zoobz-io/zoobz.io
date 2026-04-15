@@ -22,3 +22,10 @@
   top: 0;
   z-index: var(--ref-z-sticky);
 }
+
+@media (max-width: 1024px) {
+  .f-header {
+    grid-template-columns: 1fr auto;
+    overflow-x: clip;
+  }
+}

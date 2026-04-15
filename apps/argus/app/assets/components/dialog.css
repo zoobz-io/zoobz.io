@@ -1,0 +1,39 @@
+.f-dialog-overlay {
+  background: color-mix(in srgb, var(--sys-surface) 50%, transparent);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: var(--ref-z-overlay);
+}
+
+.f-dialog-content {
+  background: var(--sys-surface);
+  color: var(--sys-on-surface);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--ref-width-md);
+  max-height: 80vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  border: var(--ref-border-width-thin) solid var(--sys-outline);
+  z-index: var(--ref-z-modal);
+}
+
+.f-dialog-title,
+.f-dialog-description {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

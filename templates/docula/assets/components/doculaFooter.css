@@ -18,6 +18,8 @@
 .f-docula-footer-copyright {
   font-size: var(--ref-text-sm);
   color: var(--sys-muted);
+  margin-left: auto;
+  white-space: nowrap;
 }
 
 .f-docula-footer-dialog-body {

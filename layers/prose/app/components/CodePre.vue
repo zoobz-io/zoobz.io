@@ -17,9 +17,7 @@ const copyCode = async () => {
 
 <template>
   <Pre>
-    <Tooltip align="end" :content="copied ? 'Copied!' : 'Copy code'">
-      <Fab class="f-prose-pre" :disabled="copied" :icon="copied ? 'check' : 'copy'" label="Copy code" @click="copyCode" />
-    </Tooltip>
+    <Fab class="f-prose-pre" :disabled="copied" :icon="copied ? 'check' : 'copy'" label="Copy code" @click="copyCode" />
     <slot />
   </Pre>
 </template>
@@ -33,5 +31,11 @@ const copyCode = async () => {
   position: absolute;
   top: var(--ref-spacing-xs);
   right: var(--ref-spacing-xs);
+}
+
+@media (max-width: 1024px) {
+  .f-pre .f-prose-pre {
+    display: none;
+  }
 }
 </style>

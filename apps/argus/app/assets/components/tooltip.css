@@ -1,0 +1,103 @@
+.f-tooltip-content {
+  background: var(--sys-surface-container);
+  color: var(--sys-on-surface);
+  font-size: var(--ref-text-sm);
+  padding: var(--ref-spacing-xs);
+  border: var(--ref-border-width-thin) solid var(--sys-outline);
+  z-index: var(--ref-z-tooltip);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ref-spacing-xs);
+  position: relative;
+}
+
+.f-tooltip-content::before,
+.f-tooltip-content::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.f-tooltip-content[data-side="bottom"]::before {
+  top: -6px;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 0 6px 6px 6px;
+  border-bottom-color: var(--sys-outline);
+}
+
+.f-tooltip-content[data-side="bottom"]::after {
+  top: -5px;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 0 6px 6px 6px;
+  border-bottom-color: var(--sys-surface-container);
+}
+
+.f-tooltip-content[data-side="top"]::before {
+  bottom: -6px;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px 6px 0 6px;
+  border-top-color: var(--sys-outline);
+}
+
+.f-tooltip-content[data-side="top"]::after {
+  bottom: -5px;
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px 6px 0 6px;
+  border-top-color: var(--sys-surface-container);
+}
+
+.f-tooltip-content[data-side="bottom"][data-align="end"]::before,
+.f-tooltip-content[data-side="bottom"][data-align="end"]::after,
+.f-tooltip-content[data-side="top"][data-align="end"]::before,
+.f-tooltip-content[data-side="top"][data-align="end"]::after {
+  left: auto;
+  right: var(--ref-spacing-sm);
+  margin-left: 0;
+}
+
+.f-tooltip-content[data-side="bottom"][data-align="start"]::before,
+.f-tooltip-content[data-side="bottom"][data-align="start"]::after,
+.f-tooltip-content[data-side="top"][data-align="start"]::before,
+.f-tooltip-content[data-side="top"][data-align="start"]::after {
+  left: var(--ref-spacing-sm);
+  margin-left: 0;
+}
+
+.f-tooltip-content[data-side="left"]::before {
+  right: -6px;
+  top: 50%;
+  margin-top: -6px;
+  border-width: 6px 0 6px 6px;
+  border-left-color: var(--sys-outline);
+}
+
+.f-tooltip-content[data-side="left"]::after {
+  right: -5px;
+  top: 50%;
+  margin-top: -6px;
+  border-width: 6px 0 6px 6px;
+  border-left-color: var(--sys-surface-container);
+}
+
+.f-tooltip-content[data-side="right"]::before {
+  left: -6px;
+  top: 50%;
+  margin-top: -6px;
+  border-width: 6px 6px 6px 0;
+  border-right-color: var(--sys-outline);
+}
+
+.f-tooltip-content[data-side="right"]::after {
+  left: -5px;
+  top: 50%;
+  margin-top: -6px;
+  border-width: 6px 6px 6px 0;
+  border-right-color: var(--sys-surface-container);
+}

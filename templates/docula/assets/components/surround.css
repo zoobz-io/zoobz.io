@@ -106,6 +106,10 @@
   font-weight: var(--ref-font-normal);
 }
 
+.f-surround-next .f-surround-title {
+  text-align: end;
+}
+
 .f-surround-next-description {
   color: var(--sys-on-surface-variant);
   font-size: var(--ref-text-sm);

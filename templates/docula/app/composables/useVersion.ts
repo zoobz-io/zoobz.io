@@ -5,6 +5,7 @@ export const useVersion = () => {
 
   const versions = versionConfig?.versions ?? [];
   const latest = versionConfig?.latest ?? versions[0] ?? "";
+  const latestOnly = versionConfig?.latestOnly ?? false;
 
   const current = computed(() => {
     const version = route.params.version;
@@ -19,6 +20,7 @@ export const useVersion = () => {
     current,
     versions,
     latest,
+    latestOnly,
     isLatest,
   };
 };

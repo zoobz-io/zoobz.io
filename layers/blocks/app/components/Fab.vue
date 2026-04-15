@@ -1,4 +1,5 @@
 <script setup lang="ts">
+defineOptions({ inheritAttrs: false });
 import type { FabProps } from "../types/fab";
 
 const {
@@ -38,14 +39,35 @@ const linkProps = computed(() => ({
   ...link,
   disabled,
 }));
+
+const attrs = useAttrs();
+const primitiveProps = computed(() => ({
+  ...(link ? linkProps.value : buttonProps.value),
+  ...attrs,
+}));
 </script>
 
 <template>
+  <Tooltip v-if="label" :content="label">
+    <Primitive
+      ref="fab"
+      :as="link ? NuxtLink : 'button'"
+      :aria-label="label"
+      v-bind="primitiveProps"
+      class="f-fab"
+    >
+      <slot>
+        <Icon v-if="icon" :alias="icon" />
+      </slot>
+      <span v-if="badge !== undefined" class="f-fab-badge">{{ badge }}</span>
+    </Primitive>
+  </Tooltip>
   <Primitive
+    v-else
     ref="fab"
     :as="link ? NuxtLink : 'button'"
     :aria-label="label"
-    v-bind="link ? linkProps : buttonProps"
+    v-bind="primitiveProps"
     class="f-fab"
   >
     <slot>

@@ -1,6 +1,8 @@
-import { existsSync } from "node:fs";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
+import { useLogger } from "@nuxt/kit";
+
+const logger = useLogger("github-resources");
 
 interface ResourceDefinition {
   /** Path to the file in the repository (e.g. "README.md") */
@@ -22,21 +24,13 @@ export interface GitHubResourceSourceOptions {
   token?: string;
   /** Cache directory relative to rootDir (default: ".content-cache") */
   cacheDir?: string;
-  /** Cache TTL in milliseconds (default: 1 hour) */
-  cacheTtl?: number;
 }
 
 const DEFAULT_RESOURCES: ResourceDefinition[] = [
   { path: "README.md", key: "readme", title: "README", icon: "book-open" },
   { path: "SECURITY.md", key: "security", title: "Security", icon: "shield" },
   { path: "CONTRIBUTING.md", key: "contributing", title: "Contributing", icon: "code" },
-  { path: "llms.txt", key: "llms", title: "llms.txt", icon: "robot" },
 ];
-
-interface ResourceManifest {
-  generatedAt: string;
-  items: Record<string, string>;
-}
 
 function githubHeaders(token?: string): Record<string, string> {
   const headers: Record<string, string> = {
@@ -95,7 +89,6 @@ export function defineGitHubResourceSource(options: GitHubResourceSourceOptions)
     resources = DEFAULT_RESOURCES,
     token = process.env.GITHUB_TOKEN,
     cacheDir = ".content-cache",
-    cacheTtl = 60 * 60 * 1000,
   } = options;
 
   let contentMap: Map<string, string>;
@@ -109,49 +102,14 @@ export function defineGitHubResourceSource(options: GitHubResourceSourceOptions)
       const resourceDir = join(rootDir, cacheDir, "resources");
       await mkdir(resourceDir, { recursive: true });
 
-      const manifestPath = join(resourceDir, "manifest.json");
       contentMap = new Map();
 
-      // Check cache
-      if (existsSync(manifestPath)) {
-        try {
-          const manifest = JSON.parse(
-            await readFile(manifestPath, "utf-8"),
-          ) as ResourceManifest;
-          const age = Date.now() - new Date(manifest.generatedAt).getTime();
-
-          if (age < cacheTtl) {
-            // Verify all cached files exist
-            const allExist = Object.values(manifest.items).every((p) =>
-              existsSync(p),
-            );
-            if (allExist) {
-              for (const [key, filePath] of Object.entries(manifest.items)) {
-                contentMap.set(key, filePath);
-              }
-              console.log(
-                `[github-resources] Loaded ${contentMap.size} resources from cache`,
-              );
-              return;
-            }
-          }
-        } catch {
-          // Cache corrupt, refetch
-        }
-      }
-
-      console.log(
-        `[github-resources] Fetching resources from ${repository}...`,
-      );
-
-      const manifestItems: Record<string, string> = {};
+      logger.info(`Fetching resources from ${repository}...`);
 
       for (const resource of resources) {
         const content = await fetchFileContent(repository, resource.path, token);
         if (!content) {
-          console.warn(
-            `[github-resources] ${resource.path} not found in ${repository}`,
-          );
+          logger.warn(`${resource.path} not found in ${repository}`);
           continue;
         }
 
@@ -164,19 +122,9 @@ export function defineGitHubResourceSource(options: GitHubResourceSourceOptions)
         await writeFile(filePath, withFrontmatter);
 
         contentMap.set(`${resource.key}.md`, filePath);
-        manifestItems[`${resource.key}.md`] = filePath;
       }
 
-      // Write manifest for cache
-      const manifest: ResourceManifest = {
-        generatedAt: new Date().toISOString(),
-        items: manifestItems,
-      };
-      await writeFile(manifestPath, JSON.stringify(manifest, null, 2));
-
-      console.log(
-        `[github-resources] Fetched ${contentMap.size} resources`,
-      );
+      logger.info(`Fetched ${contentMap.size} resources`);
     },
 
     async getKeys(): Promise<string[]> {

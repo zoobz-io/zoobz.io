@@ -72,45 +72,52 @@ export const useUsersStore = defineStore("users", () => {
   const items = ref(users);
 
   // Sorting
-  const sortKey = ref<keyof User | null>("name");
+  const sortField = ref<string | null>("name");
   const sortDirection = ref<SortDirection>("asc");
 
-  const sort = (key: keyof User) => {
-    if (sortKey.value === key) {
+  const sort = (field: string) => {
+    if (sortField.value === field) {
       sortDirection.value = sortDirection.value === "asc" ? "desc" : "asc";
     } else {
-      sortKey.value = key;
+      sortField.value = field;
       sortDirection.value = "asc";
     }
   };
 
-  // Search & Filtering
-  const search = ref("");
-  const filters = ref<Record<string, unknown>>({});
+  // Search
+  const query = ref("");
+  const keywords = ref("");
+  const match = ref<"all" | "any">("all");
 
-  const setFilter = (key: string, value: unknown) => {
-    filters.value = { ...filters.value, [key]: value };
+  // Facet filtering
+  const facetFilters = ref<Record<string, unknown>>({});
+
+  const setFacet = (key: string, value: unknown) => {
+    facetFilters.value = { ...facetFilters.value, [key]: value };
   };
 
-  const clearFilters = () => {
-    filters.value = {};
-    search.value = "";
+  const clearFacets = () => {
+    facetFilters.value = {};
+    query.value = "";
+    keywords.value = "";
   };
+
+  const hasMore = ref(false);
 
   // Processed data (filtered & sorted)
   const processedData = computed(() => {
     let result = [...items.value];
 
-    if (search.value) {
-      const query = search.value.toLowerCase();
+    if (query.value) {
+      const q = query.value.toLowerCase();
       result = result.filter((item) =>
         Object.values(item).some(
-          (val) => typeof val === "string" && val.toLowerCase().includes(query),
+          (val) => typeof val === "string" && val.toLowerCase().includes(q),
         ),
       );
     }
 
-    for (const [key, value] of Object.entries(filters.value)) {
+    for (const [key, value] of Object.entries(facetFilters.value)) {
       if (value !== undefined && value !== null && value !== "") {
         if (Array.isArray(value)) {
           result = result.filter((item) => value.includes(item[key as keyof User]));

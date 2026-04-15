@@ -14,14 +14,11 @@ const appConfig = useAppConfig();
     </div>
     <div class="f-topbar-right">
       <slot name="actions">
-        <Tooltip>
-          <Fab
-            icon="rss"
-            label="RSS Feed"
-            :link="{ to: '/rss.xml', external: true, target: '_blank' }"
-          />
-          <template #content>RSS Feed</template>
-        </Tooltip>
+        <Fab
+          icon="rss"
+          label="RSS Feed"
+          :link="{ to: '/rss.xml', external: true, target: '_blank' }"
+        />
         <Theme />
         <ColorMode />
       </slot>

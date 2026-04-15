@@ -16,6 +16,7 @@ export default defineNuxtConfig({
           content: "Documentation for zoobz.io projects",
         },
       ],
+      link: [{ rel: "icon", href: "/favicon.ico" }],
     },
   },
 });

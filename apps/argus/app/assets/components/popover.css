@@ -1,0 +1,12 @@
+.f-popover-content {
+  display: flex;
+  flex-direction: column;
+  background: var(--sys-surface);
+  color: var(--sys-on-surface);
+  border: var(--ref-border-width-thin) solid var(--sys-outline);
+  box-shadow: var(--ref-shadow-lg);
+  z-index: var(--ref-z-popover);
+  min-width: 250px;
+  max-height: 400px;
+  overflow: hidden;
+}

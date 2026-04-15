@@ -143,6 +143,16 @@
   display: inline;
 }
 
+@media (max-width: 768px) {
+  .f-h1 {
+    font-size: var(--ref-text-2xl);
+  }
+
+  .f-h2 {
+    font-size: var(--ref-text-xl);
+  }
+}
+
 .f-blockquote {
   color: var(--sys-on-surface-variant);
   font-style: italic;

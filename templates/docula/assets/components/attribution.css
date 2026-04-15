@@ -33,8 +33,8 @@
 }
 
 .f-attribution-author .f-avatar-root {
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .f-attribution-published {
@@ -79,4 +79,18 @@
 .f-attribution-edit:focus-visible {
   font-weight: var(--ref-font-normal);
   box-shadow: var(--ref-shadow-focus-ring);
+}
+
+@media (max-width: 1024px) {
+  .f-attribution-edit {
+    display: none;
+  }
+
+  .f-attribution-readtime {
+    display: none;
+  }
+
+  .f-attribution-published {
+    margin-left: auto;
+  }
 }

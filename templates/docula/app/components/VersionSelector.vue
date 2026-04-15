@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const route = useRoute();
-const { current, versions, latest } = useVersion();
+const appConfig = useAppConfig();
+const { current, versions, latest, latestOnly } = useVersion();
 
 const open = ref(false);
 
@@ -14,6 +15,12 @@ const displayLabel = computed(() => {
   return v === latest ? `${v} (latest)` : v;
 });
 
+const releaseUrl = computed(() => {
+  const repo = appConfig.collection?.repo;
+  if (!repo || !latest) return "";
+  return `${repo}/releases/tag/${latest}`;
+});
+
 const handleSelect = (version: string) => {
   open.value = false;
   if (version && version !== current.value) {
@@ -24,7 +31,16 @@ const handleSelect = (version: string) => {
 </script>
 
 <template>
-  <Popover v-if="versionItems.length > 0" v-model:open="open" align="end">
+  <Button
+    v-if="latestOnly && latest"
+    :link="{ to: releaseUrl, target: '_blank', external: true }"
+  >
+    {{ latest }}
+    <template #append>
+      <Icon alias="external" />
+    </template>
+  </Button>
+  <Popover v-else-if="versionItems.length > 1" v-model:open="open" align="end">
     <Button>
       {{ displayLabel }}
       <Icon alias="chevron-down" />

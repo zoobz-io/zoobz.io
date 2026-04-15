@@ -1,0 +1,88 @@
+.f-command-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.f-command-input {
+  flex-shrink: 0;
+  background: var(--sys-surface);
+  color: var(--sys-on-surface);
+  border: none;
+  border-bottom: var(--ref-border-width-thin) solid var(--sys-outline);
+  outline-width: 0;
+  padding: var(--ref-spacing-sm) var(--ref-spacing-md);
+  font-size: var(--ref-text-sm);
+  width: 100%;
+}
+
+.f-command-input:hover {
+  border-color: var(--sys-outline);
+}
+
+.f-command-input:focus-visible {
+  border-color: var(--sys-outline);
+  box-shadow: var(--ref-shadow-focus-inset);
+}
+
+.f-command-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.f-command-viewport {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.f-command-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-command-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--ref-spacing-sm);
+  padding: var(--ref-spacing-xs) var(--ref-spacing-md);
+  background: var(--ref-color-transparent);
+  cursor: pointer;
+  text-align: start;
+  width: 100%;
+  font-size: var(--ref-text-sm);
+  transition-duration: var(--ref-duration-fast);
+  transition-timing-function: var(--ref-ease-out);
+}
+
+.f-command-item:hover {
+  background: var(--sys-hover);
+}
+
+.f-command-item:focus-visible {
+  box-shadow: var(--ref-shadow-focus-inset);
+}
+
+.f-command-item[data-highlighted] {
+  background: var(--sys-hover);
+}
+
+.f-command-empty {
+  color: var(--sys-on-surface-variant);
+  font-size: var(--ref-text-sm);
+  text-align: center;
+  padding: var(--ref-spacing-md);
+}
+
+.f-command-item-label {
+  flex: 1;
+}

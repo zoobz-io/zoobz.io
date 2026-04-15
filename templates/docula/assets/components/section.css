@@ -8,4 +8,5 @@
   padding-bottom: var(--ref-spacing-lg);
   padding-left: var(--ref-spacing-lg);
   min-width: 0;
+  overflow-x: clip;
 }

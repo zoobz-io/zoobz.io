@@ -1,4 +1,5 @@
-import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
+import { readFile, readdir, writeFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
 import { addTemplate, defineNuxtModule, useLogger } from "@nuxt/kit";
 import type { VersionManifest } from "../sources/github-tags";
@@ -10,18 +11,13 @@ interface StatItem {
   value: string;
 }
 
-interface StatsManifest {
-  stats: StatItem[];
-  generatedAt: string;
-}
-
 export interface GitHubModuleOptions {
   /** Repository in "owner/repo" format or full GitHub URL */
   repo?: string;
   /** Cache directory relative to rootDir (default: ".content-cache") */
   cacheDir?: string;
-  /** Stats cache TTL in milliseconds (default: 1 hour) */
-  cacheTtl?: number;
+  /** GitHub usernames to fetch avatars for */
+  avatars?: string[];
 }
 
 function parseRepo(repo: string): { owner: string; repo: string } | null {
@@ -116,30 +112,12 @@ async function fetchLatestRelease(owner: string, repo: string, token?: string): 
 }
 
 async function resolveStats(
-  cacheDir: string,
   repoUrl: string,
-  cacheTtl: number,
 ): Promise<StatItem[]> {
   const parsed = parseRepo(repoUrl);
   if (!parsed) {
     logger.warn("Could not parse repo:", repoUrl);
     return [];
-  }
-
-  const manifestPath = join(cacheDir, "stats-manifest.json");
-
-  // Check cache
-  if (existsSync(manifestPath)) {
-    try {
-      const manifest = JSON.parse(readFileSync(manifestPath, "utf-8")) as StatsManifest;
-      const age = Date.now() - new Date(manifest.generatedAt).getTime();
-      if (age < cacheTtl) {
-        logger.info(`Loaded ${manifest.stats.length} stats from cache`);
-        return manifest.stats;
-      }
-    } catch {
-      // Cache corrupt, refetch
-    }
   }
 
   const { owner, repo } = parsed;
@@ -162,14 +140,6 @@ async function resolveStats(
     return [];
   }
 
-  // Cache
-  mkdirSync(cacheDir, { recursive: true });
-  const manifest: StatsManifest = {
-    stats,
-    generatedAt: new Date().toISOString(),
-  };
-  writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
-
   logger.info(`Fetched ${stats.length} stats: ${stats.map((s) => s.label).join(", ")}`);
   return stats;
 }
@@ -191,6 +161,51 @@ function resolveVersions(cacheDir: string): VersionManifest | null {
   }
 }
 
+async function fetchAvatar(username: string, dir: string) {
+  const dest = join(dir, `${username}.png`);
+  if (existsSync(dest)) return;
+
+  try {
+    if (!existsSync(dir)) {
+      await mkdir(dir, { recursive: true });
+    }
+
+    logger.info(`Fetching avatar for ${username}...`);
+    const res = await fetch(`https://github.com/${username}.png?size=512`);
+
+    if (!res.ok) {
+      logger.error(`Failed to fetch avatar for ${username}: ${res.status}`);
+      return;
+    }
+
+    const buffer = Buffer.from(await res.arrayBuffer());
+    await writeFile(dest, buffer);
+    logger.success(`Avatar saved: avatars/${username}.png`);
+  } catch (e) {
+    logger.error(`Failed to fetch avatar for ${username}: ${e}`);
+  }
+}
+
+async function findAuthors(contentDirs: string[]): Promise<Set<string>> {
+  const authors = new Set<string>();
+
+  for (const dir of contentDirs) {
+    if (!existsSync(dir)) continue;
+    const files = await readdir(dir, { recursive: true });
+
+    for (const file of files) {
+      if (!String(file).endsWith(".md")) continue;
+      const content = await readFile(join(dir, String(file)), "utf-8");
+      const match = content.match(/^---\s*\n([\s\S]*?)\n---/);
+      if (!match) continue;
+      const authorMatch = match[1].match(/^author:\s*(.+)$/m);
+      if (authorMatch) authors.add(authorMatch[1].trim());
+    }
+  }
+
+  return authors;
+}
+
 export default defineNuxtModule<GitHubModuleOptions>({
   meta: {
     name: "github",
@@ -198,7 +213,6 @@ export default defineNuxtModule<GitHubModuleOptions>({
   },
   defaults: {
     cacheDir: ".content-cache",
-    cacheTtl: 60 * 60 * 1000,
   },
   async setup(options, nuxt) {
     const cacheDir = join(nuxt.options.rootDir, options.cacheDir!);
@@ -210,6 +224,7 @@ export default defineNuxtModule<GitHubModuleOptions>({
         nuxt.options.appConfig.version = {
           versions: versionManifest.versions,
           latest: versionManifest.latest,
+          latestOnly: versionManifest.latestOnly,
           current: "",
         };
       }
@@ -218,7 +233,7 @@ export default defineNuxtModule<GitHubModuleOptions>({
     // Stats
     let statsData: StatItem[] = [];
     if (options.repo) {
-      statsData = await resolveStats(cacheDir, options.repo, options.cacheTtl!);
+      statsData = await resolveStats(options.repo);
     }
 
     addTemplate({
@@ -232,5 +247,31 @@ export default defineNuxtModule<GitHubModuleOptions>({
       nuxt.options.buildDir,
       "github/stats",
     );
+
+    // Avatars
+    const avatarDir = join(nuxt.options.rootDir, "public/avatars");
+    const usernames = new Set<string>();
+
+    // Explicit avatars from module config
+    if (options.avatars) {
+      for (const u of options.avatars) usernames.add(u);
+    }
+
+    const github = nuxt.options.appConfig?.github as string | undefined;
+    if (github) usernames.add(github);
+
+    // Scan local content dirs + cache dir for author frontmatter
+    const contentDirs = nuxt.options._layers
+      .map((l) => join(l.cwd, "content"))
+      .filter((d) => existsSync(d));
+    if (existsSync(cacheDir)) contentDirs.push(cacheDir);
+    const authors = await findAuthors(contentDirs);
+    for (const author of authors) usernames.add(author);
+
+    if (usernames.size > 0) {
+      await Promise.all(
+        [...usernames].map((u) => fetchAvatar(u, avatarDir)),
+      );
+    }
   },
 });

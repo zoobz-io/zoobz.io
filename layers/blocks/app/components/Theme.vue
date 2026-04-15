@@ -34,7 +34,7 @@ const modKey = computed(() => (isMac.value ? "⌘" : "Ctrl"));
 <template>
   <Popover v-model:open="open" side="top" align="end">
     <Tooltip align="end">
-      <Fab shortcut="meta+t" icon="theme" label="Theme" @click="open = !open" />
+      <Fab shortcut="meta+t" icon="theme" aria-label="Theme" @click="open = !open" />
       <template #content>
         <span>{{ displayLabel }}</span>
         <Kbd>

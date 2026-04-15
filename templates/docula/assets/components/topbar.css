@@ -16,3 +16,22 @@
   justify-content: flex-end;
   gap: var(--ref-spacing-xs);
 }
+
+.f-topbar-menu-fab {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .f-topbar-center {
+    display: none;
+  }
+
+  .f-topbar-version {
+    display: none;
+  }
+
+  .f-topbar-menu-fab {
+    display: flex;
+  }
+}
+

@@ -4,6 +4,12 @@
   gap: var(--ref-spacing-none);
 }
 
+@media (max-width: 768px) {
+  .f-content-grid-root {
+    grid-template-columns: 1fr;
+  }
+}
+
 .f-content-grid-item {
   display: flex;
   flex-direction: column;

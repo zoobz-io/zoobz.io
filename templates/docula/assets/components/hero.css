@@ -13,6 +13,8 @@
   flex-direction: column;
   align-items: flex-start;
   gap: var(--ref-spacing-lg);
+  max-width: 100%;
+  min-width: 0;
 }
 
 .f-hero-tagline {
@@ -28,17 +30,29 @@
 .f-hero-showcase {
   display: flex;
   align-items: center;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .f-hero {
     grid-template-columns: 1fr;
     min-height: auto;
     padding-top: var(--ref-spacing-xl);
     padding-bottom: var(--ref-spacing-xl);
   }
+}
 
-  .f-hero-showcase {
-    order: -1;
+@media (max-width: 768px) {
+  .f-hero-tagline {
+    font-size: var(--ref-text-xl);
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .f-hero-content .f-p {
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 }

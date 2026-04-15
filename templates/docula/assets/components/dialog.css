@@ -16,7 +16,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: var(--ref-width-container);
+  width: min(var(--ref-width-container), calc(100vw - 2 * var(--ref-spacing-lg)));
   max-height: 80vh;
   overflow-y: hidden;
   display: flex;

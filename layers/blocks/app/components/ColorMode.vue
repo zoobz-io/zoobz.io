@@ -21,7 +21,7 @@ const toggle = () => {
 
 <template>
   <Tooltip align="end">
-    <Fab shortcut="meta+d" :icon="mode" :label="label" @click="toggle" />
+    <Fab shortcut="meta+d" :icon="mode" :aria-label="label" @click="toggle" />
     <template #content>
       <span>{{ label }}</span>
       <Kbd>

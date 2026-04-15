@@ -4,4 +4,15 @@
   max-width: var(--ref-width-container);
   margin-left: auto;
   margin-right: auto;
+  overflow-x: clip;
+}
+
+@media (max-width: 1024px) {
+  .f-container {
+    grid-template-columns: 1fr;
+  }
+
+  .f-container > .f-nav {
+    display: none;
+  }
 }

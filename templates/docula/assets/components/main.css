@@ -1,3 +1,9 @@
+@media (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
 .f-main {
   --f-nav-width: 16rem;
   background: var(--sys-surface);
@@ -8,6 +14,7 @@
   display: grid;
   grid-template-columns: var(--f-nav-width) 1fr;
   grid-template-rows: auto 1fr auto;
+  overflow-x: clip;
 }
 
 /* Without a left nav, single column */
@@ -37,4 +44,30 @@
 .f-main > .f-footer {
   grid-column: 1 / -1;
   grid-row: 3;
+}
+
+.f-nav-drawer-overlay {
+  top: var(--f-header-height);
+}
+
+.f-nav-drawer-content {
+  position: fixed;
+  top: var(--f-header-height);
+  left: 0;
+  width: var(--f-nav-width, 16rem);
+  height: calc(100vh - var(--f-header-height));
+  background: var(--sys-surface-container);
+  border-right: var(--ref-border-width-thin) solid var(--sys-outline);
+  overflow-y: auto;
+  z-index: var(--ref-z-modal);
+}
+
+@media (max-width: 1024px) {
+  .f-main {
+    grid-template-columns: 1fr;
+  }
+
+  .f-main > .f-nav.f-nav-desktop {
+    display: none;
+  }
 }

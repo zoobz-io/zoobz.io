@@ -9,6 +9,7 @@ export default defineContentConfig({
       source: defineGitHubTagSource({
         repository: "zoobz-io/aegis",
         docsPath: "docs",
+        latestOnly: true,
       }),
       schema: z.object({
         author: z.string().optional(),
@@ -19,7 +20,7 @@ export default defineContentConfig({
       }),
     }),
     resources: defineCollection({
-      type: "page",
+      type: "data",
       source: defineGitHubResourceSource({
         repository: "zoobz-io/aegis",
       }),

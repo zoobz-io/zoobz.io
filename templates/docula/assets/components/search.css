@@ -55,7 +55,7 @@
   top: 25%;
   left: 50%;
   transform: translateX(-50%);
-  width: var(--ref-width-xl);
+  width: min(var(--ref-width-xl), calc(100vw - 2 * var(--ref-spacing-lg)));
   max-height: 50vh;
   overflow-y: hidden;
   border-top-width: var(--ref-border-width-thin);

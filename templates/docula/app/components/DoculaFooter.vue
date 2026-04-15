@@ -33,14 +33,13 @@ const openResource = (resource: ResourceContent) => {
   <Footer>
     <div class="f-docula-footer">
       <div class="f-docula-footer-resources">
-        <Tooltip v-for="resource in resources" :key="resource.id">
-          <Fab
-            :icon="resource.icon ?? 'file'"
-            :label="resource.title ?? ''"
-            @click="openResource(resource)"
-          />
-          <template #content>{{ resource.title }}</template>
-        </Tooltip>
+        <Fab
+          v-for="resource in resources"
+          :key="resource.id"
+          :icon="resource.icon ?? 'file'"
+          :label="resource.title ?? ''"
+          @click="openResource(resource)"
+        />
       </div>
       <span class="f-docula-footer-copyright">&copy; {{ new Date().getFullYear() }} Alexander Thorwaldson</span>
     </div>

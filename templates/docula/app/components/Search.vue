@@ -70,7 +70,7 @@ const getIcon = (path: string) => {
   return undefined;
 };
 
-const open = ref(false);
+const open = defineModel<boolean>({ default: false });
 
 const searchTerm = ref("");
 const isMac = computed(() => {

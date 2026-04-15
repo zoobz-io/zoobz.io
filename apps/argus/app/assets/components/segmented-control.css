@@ -1,0 +1,47 @@
+.f-segmented-control {
+  display: inline-flex;
+  width: fit-content;
+  background: var(--sys-surface-container);
+  border: var(--ref-border-width-thin) solid var(--sys-outline);
+}
+
+.f-segmented-control-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ref-spacing-xs);
+  padding: var(--ref-spacing-xs) var(--ref-spacing-sm);
+  background: transparent;
+  color: var(--sys-on-surface);
+  font-size: var(--ref-text-sm);
+  border: none;
+  cursor: pointer;
+}
+
+.f-segmented-control-item:not(:last-child) {
+  border-right: var(--ref-border-width-thin) solid var(--sys-outline);
+}
+
+.f-segmented-control-item:not(:disabled):not([data-disabled]):hover {
+  background: var(--sys-hover);
+}
+
+.f-segmented-control-item[data-state="on"] {
+  background: var(--sys-primary);
+  color: var(--sys-on-primary);
+}
+
+.f-segmented-control-item[data-state="on"]:not(:disabled):not([data-disabled]):hover {
+  background: var(--sys-primary-hover);
+}
+
+.f-segmented-control-item:focus-visible {
+  outline: none;
+  box-shadow: var(--ref-shadow-focus-inset);
+}
+
+.f-segmented-control-item:disabled,
+.f-segmented-control-item[data-disabled] {
+  opacity: 0.5;
+  cursor: default;
+}

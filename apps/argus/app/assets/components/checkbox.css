@@ -1,0 +1,53 @@
+.f-checkbox-root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: var(--ref-spacing-md);
+  height: var(--ref-spacing-md);
+  background: var(--sys-surface);
+  border: var(--ref-border-width-thin) solid var(--sys-outline);
+  cursor: pointer;
+}
+
+.f-checkbox-root:not(:disabled):not([data-disabled]):hover {
+  background: var(--sys-hover);
+}
+
+.f-checkbox-root[data-state='checked'],
+.f-checkbox-root[data-state='indeterminate'] {
+  background: var(--sys-primary);
+  border-color: var(--sys-outline);
+}
+
+.f-checkbox-root[data-state='checked']:not(:disabled):not([data-disabled]):hover,
+.f-checkbox-root[data-state='indeterminate']:not(:disabled):not([data-disabled]):hover {
+  background: var(--sys-primary-hover);
+  border-color: var(--sys-outline);
+}
+
+.f-checkbox-root:focus-visible {
+  outline: 2px solid var(--sys-primary);
+  outline-offset: 2px;
+}
+
+.f-checkbox-root:disabled,
+.f-checkbox-root[data-disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.f-checkbox-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sys-on-primary);
+  font-size: var(--ref-text-sm);
+  line-height: 0;
+  opacity: 0;
+}
+
+.f-checkbox-root[data-state='checked'] .f-checkbox-indicator,
+.f-checkbox-root[data-state='indeterminate'] .f-checkbox-indicator {
+  opacity: 1;
+}

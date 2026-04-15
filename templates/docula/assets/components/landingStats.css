@@ -29,4 +29,12 @@
     gap: var(--ref-spacing-2xl);
     justify-content: center;
   }
+
+  .f-landing-stat-value {
+    font-size: var(--ref-text-2xl);
+  }
+
+  .f-landing-stat-label {
+    font-size: var(--ref-text-sm);
+  }
 }

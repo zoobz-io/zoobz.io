@@ -1,0 +1,28 @@
+{
+  "name": "@zoobz-io/argus",
+  "type": "module",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "prepare": "nuxi prepare",
+    "typecheck": "nuxi typecheck"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.11.3",
+    "@zoobz-io/blocks": "workspace:*",
+    "@zoobz-io/iconic": "workspace:*",
+    "nuxt-auth-utils": "^0.5.29",
+    "openapi-fetch": "^0.13.5",
+    "pinia": "^3.0.4"
+  },
+  "devDependencies": {
+    "@nuxt/kit": "^4.3.1",
+    "nuxt": "catalog:",
+    "openapi-typescript": "^7.6.1",
+    "typescript": "catalog:"
+  }
+}

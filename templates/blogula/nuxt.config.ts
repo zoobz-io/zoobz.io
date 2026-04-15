@@ -2,7 +2,7 @@ import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-11-17",
-  extends: ["@zoobz-io/prose"],
+  extends: ["@zoobz-io/prose", "@zoobz-io/github"],
   modules: ["@nuxt/fonts"],
   fonts: {
     families: [

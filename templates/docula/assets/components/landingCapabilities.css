@@ -47,3 +47,35 @@
   width: 1em;
   height: 1em;
 }
+
+@media (max-width: 1024px) {
+  .f-landing-capabilities-table,
+  .f-landing-capabilities-table tbody,
+  .f-landing-capability,
+  .f-landing-capability td {
+    display: block;
+    width: 100%;
+  }
+
+  .f-landing-capability td {
+    white-space: normal;
+    padding: var(--ref-spacing-sm) var(--ref-spacing-md);
+    text-align: left;
+  }
+
+  .f-landing-capability td:first-child {
+    padding-bottom: 0;
+  }
+
+  .f-landing-capability td:last-child {
+    padding-top: 0;
+  }
+
+  .f-landing-capability + .f-landing-capability td:first-child {
+    border-top: var(--ref-border-width-thin) solid var(--sys-outline);
+  }
+
+  .f-landing-capability + .f-landing-capability td:not(:first-child) {
+    border-top: none;
+  }
+}

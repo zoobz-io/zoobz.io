@@ -1,0 +1,56 @@
+.f-keywords {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ref-spacing-sm);
+  padding: var(--ref-spacing-sm);
+  min-width: 260px;
+}
+
+.f-keywords-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ref-spacing-xs);
+}
+
+.f-keywords-input-row {
+  display: flex;
+  align-items: center;
+  gap: var(--ref-spacing-xs);
+}
+
+.f-keywords-input {
+  flex: 1;
+  min-width: 0;
+  padding: var(--ref-spacing-xs) var(--ref-spacing-sm);
+  font-size: var(--ref-text-sm);
+  background: var(--sys-surface);
+  color: var(--sys-on-surface);
+  border: var(--ref-border-width-thin) solid var(--sys-outline);
+  outline: none;
+}
+
+.f-keywords-input::placeholder {
+  color: var(--sys-on-surface-variant);
+}
+
+.f-keywords-input:focus {
+  box-shadow: var(--ref-shadow-focus-inset);
+}
+
+.f-keywords-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ref-spacing-xs);
+  padding-top: var(--ref-spacing-xs);
+  border-top: var(--ref-border-width-thin) solid var(--sys-outline);
+}
+
+.f-keywords-include {
+  color: var(--sys-primary);
+  font-weight: var(--ref-font-bold);
+}
+
+.f-keywords-exclude {
+  color: var(--sys-error);
+  font-weight: var(--ref-font-bold);
+}

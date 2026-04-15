@@ -1,7 +1,13 @@
+.f-main:has(.f-landing) .f-nav-desktop {
+  display: none;
+}
+
 /* Landing page root */
 .f-landing {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  min-width: 0;
 }
 
 /* Full-width landing section with alternating backgrounds */
@@ -17,6 +23,8 @@
 /* Constrain section content to container width */
 .f-landing-section-inner {
   max-width: var(--ref-width-container);
+  width: 100%;
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   padding-top: 4rem;
