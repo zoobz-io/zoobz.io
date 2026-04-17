@@ -17,17 +17,16 @@
   gap: var(--ref-spacing-xs);
 }
 
+.f-search-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .f-topbar-center {
-    min-width: 0;
-  }
-
-  .f-topbar-center .f-search-trigger-text,
-  .f-topbar-center .f-search-trigger .f-kbd {
     display: none;
   }
 
-  .f-topbar-center .f-search-trigger {
-    width: auto;
+  .f-search-mobile {
+    display: flex;
   }
 }

@@ -14,6 +14,13 @@ const appConfig = useAppConfig();
     </div>
     <div class="f-topbar-right">
       <slot name="actions">
+        <div class="f-search-mobile">
+          <Search>
+            <template #trigger="{ open }">
+              <Fab icon="search" label="Search" @click="open" />
+            </template>
+          </Search>
+        </div>
         <Fab
           icon="rss"
           label="RSS Feed"

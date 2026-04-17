@@ -117,6 +117,15 @@
   box-shadow: var(--ref-shadow-focus-inset);
 }
 
+.f-timeline-card-static {
+  background: transparent;
+  border-style: dashed;
+}
+
+.f-timeline-card-static:hover {
+  background: transparent;
+}
+
 .f-timeline-card-title {
   font-size: var(--ref-text-lg);
   font-weight: var(--ref-font-semibold);

@@ -2,10 +2,10 @@
 title: Blog
 ---
 
-# 👋 Hi, I'm Alexander Thorwaldson.
+# 👋 Hey! I'm Alex.
 
-I'm building [composable libraries](https://zoobz.io/projects) designed for constructing [modern agentic applications](https://zoobz.io/apps) in Go. The idea is simple: small primitives with clear contracts that snap together without friction. Each library does one thing well and stays out of your way.
+I try to write code that is simple to reason about, easy to maintain, and more powerful than the sum of it's parts.
 
-My objective is to build tools that are simple to reason about and understand to enable rapid development of agentic applications as well as explore alignment via [narrative devices and storytelling](https://zoobz.io/agents).
+I am currently working on [zoobz-io](https://github.com/zoobz-io), a collection of composable libraries in Go designed for constructing modern agentic applications.
 
-If you are interested in the work I am doing, lets get in touch!
+The idea is simple: small primitives with clear, generic contracts that snap together without friction. Each library does one thing well and stays out of your way.

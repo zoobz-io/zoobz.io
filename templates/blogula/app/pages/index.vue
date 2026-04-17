@@ -72,6 +72,13 @@ const timelineItems = computed<TimelineItem[]>(() => {
       </div>
     </div>
 
+    <div class="f-blog-lead" />
+    <div class="f-blog-projects-section">
+      <div class="f-blog-section-inner">
+        <Projects />
+      </div>
+    </div>
+
     <div class="f-blog-timeline-section">
       <div class="f-blog-section-inner">
         <Timeline v-if="timelineItems.length" :items="timelineItems" />

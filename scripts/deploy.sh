@@ -2,13 +2,20 @@
 set -euo pipefail
 
 if [ -z "${1:-}" ]; then
-  echo "Usage: ./scripts/deploy-docs.sh <site>"
-  echo "Example: ./scripts/deploy-docs.sh sentinel"
+  echo "Usage: ./scripts/deploy.sh <site>"
+  echo "Examples:"
+  echo "  ./scripts/deploy.sh sentinel    # deploys sites/docs/sentinel"
+  echo "  ./scripts/deploy.sh blog        # deploys sites/blog"
   exit 1
 fi
 
 SITE="$1"
-SITE_DIR="sites/docs/$SITE"
+
+if [ "$SITE" = "blog" ]; then
+  SITE_DIR="sites/blog"
+else
+  SITE_DIR="sites/docs/$SITE"
+fi
 
 if [ ! -d "$SITE_DIR" ]; then
   echo "Error: $SITE_DIR does not exist"

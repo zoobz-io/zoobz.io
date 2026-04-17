@@ -49,6 +49,13 @@
   border-bottom: var(--ref-border-width-thin) solid var(--sys-outline);
 }
 
+/* Projects section: variant bg, full-width, bordered */
+.f-blog-projects-section {
+  background: var(--sys-surface-container);
+  border-top: var(--ref-border-width-thin) solid var(--sys-outline);
+  border-bottom: var(--ref-border-width-thin) solid var(--sys-outline);
+}
+
 /* Timeline section */
 .f-blog-timeline-section {
   display: flex;
@@ -75,8 +82,8 @@
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: var(--ref-spacing-2xl);
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .f-blogula-hero-avatar {
@@ -105,6 +112,10 @@
 
 .f-landing-contacts .f-button:hover {
   background: var(--sys-hover);
+}
+
+.f-landing-contacts .f-button:focus-visible {
+  box-shadow: var(--ref-shadow-focus-ring);
 }
 
 .f-landing-contacts .f-button:active {

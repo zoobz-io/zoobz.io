@@ -11,3 +11,15 @@ export interface BlogulaEvent {
   description: string;
   link?: string;
 }
+
+export interface EnrichedProject {
+  name: string;
+  description: string;
+  html_url: string;
+  stargazers_count: number;
+  forks_count: number;
+  open_issues_count: number;
+  language: string | null;
+  topics: string[];
+  updated_at: string;
+}

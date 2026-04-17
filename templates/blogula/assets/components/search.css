@@ -86,5 +86,6 @@
 @media (max-width: 768px) {
   .f-search-content {
     width: calc(100vw - 2 * var(--ref-spacing-md));
+    top: var(--ref-spacing-md);
   }
 }

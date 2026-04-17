@@ -1603,6 +1603,9 @@ importers:
       '@nuxt/fonts':
         specifier: ^0.12.1
         version: 0.12.1(db0@0.3.4(better-sqlite3@12.6.2))(ioredis@5.9.2)(magicast@0.5.2)(vite@7.3.1(@types/node@25.2.2)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+      '@zoobz-io/github':
+        specifier: workspace:*
+        version: link:../../layers/github
       '@zoobz-io/prose':
         specifier: workspace:*
         version: link:../../layers/prose

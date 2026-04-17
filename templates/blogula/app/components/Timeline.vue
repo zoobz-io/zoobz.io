@@ -21,7 +21,11 @@ defineProps<{
 
 const formatDate = (dateString?: string) => {
   if (!dateString) return "";
-  const date = new Date(dateString);
+  // Date-only strings (YYYY-MM-DD) parse as UTC — treat as local to avoid day shift
+  const raw = /^\d{4}-\d{2}-\d{2}$/.test(dateString)
+    ? dateString + "T00:00:00"
+    : dateString;
+  const date = new Date(raw);
   return date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",
@@ -84,7 +88,7 @@ const itemKey = (item: TimelineItem) =>
       </NuxtLink>
 
       <!-- Event card (no link) -->
-      <div v-else class="f-timeline-card">
+      <div v-else class="f-timeline-card f-timeline-card-static">
         <span class="f-timeline-card-title">{{ item.title }}</span>
         <span class="f-timeline-card-description">{{ item.description }}</span>
       </div>

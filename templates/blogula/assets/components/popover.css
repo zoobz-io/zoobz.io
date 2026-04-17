@@ -1,6 +1,9 @@
 .f-popover-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
+  max-height: 400px;
+  min-width: 250px;
   background: var(--sys-surface);
   color: var(--sys-on-surface);
   border-top-width: var(--ref-border-width-thin);

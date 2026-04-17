@@ -122,6 +122,8 @@ export default defineNuxtConfig({
       robot: "twotone-smart-toy",
       rocket: "twotone-rocket",
       star: "twotone-star",
+      fork: "twotone-call-split",
+      issue: "twotone-adjust",
       celebration: "twotone-celebration",
       launch: "twotone-launch",
       bolt: "twotone-bolt",

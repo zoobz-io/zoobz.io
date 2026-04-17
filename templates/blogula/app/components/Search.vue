@@ -65,7 +65,10 @@ const postDateMap = computed(() => {
   for (const post of allPosts.value) {
     const date = post.updated ?? post.published;
     if (date) {
-      map.set(post.path, new Date(date).toLocaleDateString("en-US", {
+      const raw = typeof date === "string" && /^\d{4}-\d{2}-\d{2}$/.test(date)
+        ? date + "T00:00:00"
+        : date;
+      map.set(post.path, new Date(raw).toLocaleDateString("en-US", {
         year: "numeric",
         month: "short",
         day: "numeric",
@@ -106,11 +109,13 @@ const handleOpenChange = (value: boolean) => {
 </script>
 
 <template>
-  <button class="f-search-trigger" @click="open = true">
-    <Icon alias="search" />
-    <span class="f-search-trigger-text">{{ placeholder }}</span>
-    <Kbd>{{ modKey }} + K</Kbd>
-  </button>
+  <slot name="trigger" :open="() => (open = true)">
+    <button class="f-search-trigger" @click="open = true">
+      <Icon alias="search" />
+      <span class="f-search-trigger-text">{{ placeholder }}</span>
+      <Kbd>{{ modKey }} + K</Kbd>
+    </button>
+  </slot>
 
   <DialogRoot :open="open" @update:open="handleOpenChange">
     <DialogPortal>

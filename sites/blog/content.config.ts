@@ -11,8 +11,8 @@ export default defineContentConfig({
       source: "posts/**",
       schema: z.object({
         author: z.string().optional(),
-        published: z.date().optional(),
-        updated: z.date().optional(),
+        published: z.string().optional(),
+        updated: z.string().optional(),
         readtime: z.string().optional(),
         tags: z.array(z.string()).optional(),
       }),
